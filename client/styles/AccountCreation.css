@@ -1,0 +1,41 @@
+/* General Styles */
+
+
+/* Dynamic Category Styles */
+#CategoryContainer {
+	min-height: 100px;
+	
+	border: 1px solid #999;
+	border-radius: 2px;
+}
+
+.Category {
+	margin: 10px;
+	
+	border: 1px solid #bbb;
+}
+
+
+.CategoryBlocks {
+	
+}
+
+
+.CategoryLabel {
+	border-top: 1px solid #999;
+}
+
+
+.CategoryBlock {
+	
+}
+
+/* Password Canvas Styles */
+#PasswordCanvas {
+	height: 50px;
+	
+	margin: 20px;
+	
+	border: 1px solid #999;
+	border-radius: 4px;
+}

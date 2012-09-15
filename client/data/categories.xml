@@ -1,15 +1,3 @@
-JacksonPass
-===========
-
-Dynamically changing password security application for Fall 2012 PennApps competition
-
-
-Block Data Format:
-===========
-
-This is the data format that our clientside password creation page will expect the available
-block data to appear in.
-
 <categories>
 	<category>
 		<blocks>
@@ -58,6 +46,4 @@ block data to appear in.
 		</traits>
 	</category>
 </categories>
-
-
 
