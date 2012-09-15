@@ -35,9 +35,23 @@ var Controller = {
 	redrawCategories: function() {
 		//Clear the category container
 		Controller.CategoryContainer.empty();
+		
 		//Draw the templates for each category (Recursively draws the Blocks too)
 		$.each(Controller.categories, function() {
-			Controller.CategoryContainer.append(ich.Category(this));
+			var catView = new Views.Category(this);
+			catView.redraw(Controller.CategoryContainer);
+		});
+		
+		//Make blocks draggable
+		$('.CategoryBlock')
+		.draggable({
+			helper: 'clone',
+			revert: true,
+			cursor: "move",
+			start: function(event, ui) {
+				var dataModel = $(event.target).data("model");
+				ui.helper[0].textContent= dataModel.short_name;
+			}
 		});
 	}
 
