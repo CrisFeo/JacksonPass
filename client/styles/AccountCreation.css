@@ -1,37 +1,54 @@
 /* General Styles */
-
+body {
+	background-color: #FFEEC0;
+}
 
 /* Dynamic Category Styles */
 #CategoryContainer {
-	border: 1px solid #999;
+	height: 300px;
+	overflow-x: scroll;
+	
+	border: 1px solid #372D23;
 	border-radius: 2px;
+	
+	background-color: #F9F9F9;
 }
 
 .Category {
-	border: 1px solid #bbb;
+	height: 265px;
+	margin: 4px 8px;
+	float: left;
 }
 
 
 .CategoryBlocks {
+	height: 90%;
+	padding: 8px;
 	
+	border: 1px solid #372D23;
+	border-radius: 4px;
 }
 
 
 .CategoryLabel {
-	border-top: 1px solid #999;
+	padding-left: 4px;
 }
 
 
 .CategoryBlock {
+	padding: 4px;
+	margin-bottom: 4px;
 	
+	border: 1px solid #372D23;
+	border-radius: 2px;
 }
 
 /* Password Canvas Styles */
 #PasswordCanvas {
 	height: 50px;
 	
-	margin: 20px;
-	
-	border: 1px solid #999;
+	border: 1px solid #372D23;
 	border-radius: 4px;
+	
+	background-color: #F9F9F9;
 }
