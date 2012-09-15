@@ -4,6 +4,7 @@
 	<title>JacksonPass: For the Kids - Account Creation</title>
 	
 	<!-- CSS Includes -->
+	<link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles/AccountCreation.css">
 	
 	<!--[if lt IE 9]>
@@ -12,16 +13,19 @@
 </head>
 
 <body>
-	
-	<div id="CategoryContainer">
-		<!-- Fancy block categories go here -->
+	<div class="container">
+		<div class="row">
+			<div id="CategoryContainer" class="span12">
+				<!-- Fancy block categories go here -->
+			</div>
+		</div>
+		
+		<div class="row">
+			<div id="PasswordCanvas" class="span9">
+				<!-- The components of your password go here -->
+			</div>
+		</div>
 	</div>
-	
-	<div id="PasswordCanvas">
-		<!-- The components of your password go here -->
-	</div>
-	
-	
 	<!-- ICanHaz.js Templates -->
 	
 	<script id="Category" type="text/html">
