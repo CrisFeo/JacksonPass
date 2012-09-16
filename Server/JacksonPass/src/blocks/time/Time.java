@@ -8,22 +8,22 @@ import blocks.ICategory;
 
 public class Time extends ICategory {
 
+
+	public Time() {}
+	
 	@Override
 	public String getName() {
-		// TODO Auto-generated method stub
-		return null;
+		return "Time";
 	}
 
 	@Override
 	public String getColor() {
-		// TODO Auto-generated method stub
-		return null;
+		return "0x000000";
 	}
 
 	@Override
 	public String getBlockColor() {
-		// TODO Auto-generated method stub
-		return null;
+		return "0xFFFFFF";
 	}
 
 	protected String format(String format) {
