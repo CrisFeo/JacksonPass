@@ -30,12 +30,12 @@ public class Sports extends ICategory {
 
 	@Override
 	public String getColor() {
-		return "Semen";
+		return "#EEEEEE";
 	}
 
 	@Override
 	public String getBlockColor() {
-		return "ASSHOLE";
+		return "green";
 	}
 
 	@Override

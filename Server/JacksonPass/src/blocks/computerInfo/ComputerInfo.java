@@ -22,12 +22,12 @@ public class ComputerInfo extends ICategory {
 
 	@Override
 	public String getColor() {
-		return "Fuck Ben";
+		return "#EEEEEE";
 	}
 
 	@Override
 	public String getBlockColor() {
-		return "Suck my Dick";
+		return "blue";
 	}
 
 	public String getBrowser(HttpServletRequest req) {

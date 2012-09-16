@@ -20,12 +20,12 @@ public class Time extends ICategory {
 
 	@Override
 	public String getColor() {
-		return "Stolabitch";
+		return "#EEEEEE";
 	}
 
 	@Override
 	public String getBlockColor() {
-		return "BIRD!";
+		return "red";
 	}
 
 	protected String format(String format) {

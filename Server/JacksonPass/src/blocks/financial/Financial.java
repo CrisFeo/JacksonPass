@@ -20,12 +20,12 @@ public class Financial extends ICategory {
 
 	@Override
 	public String getColor() {
-		return "Stankin";
+		return "#EEEEEE";
 	}
 
 	@Override
 	public String getBlockColor() {
-		return "Tall mother fucker";
+		return "orange";
 	}
 
 	public String getChange(String stock) {
