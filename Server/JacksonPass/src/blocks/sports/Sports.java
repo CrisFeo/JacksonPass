@@ -3,23 +3,23 @@ package blocks.sports;
 import blocks.ICategory;
 
 public class Sports extends ICategory{
+	
 
+	public Sports() {}
+	
 	@Override
 	public String getName() {
-		// TODO Auto-generated method stub
-		return null;
+		return "Sports";
 	}
 
 	@Override
 	public String getColor() {
-		// TODO Auto-generated method stub
-		return null;
+		return "0x000000";
 	}
 
 	@Override
 	public String getBlockColor() {
-		// TODO Auto-generated method stub
-		return null;
+		return "0xFFFFFF";
 	}
 
 }

@@ -29,11 +29,9 @@ public class CreationServlet extends HttpServlet {
 	
 	private void returnBlockClassInfoTest(HttpServletResponse response) throws IOException
 	{
-		response.setContentType("text/html");
+		response.setContentType("application/xml");
 		StringBuffer responseBody = new StringBuffer();
-		responseBody.append("<html>");
-		responseBody.append(PasswordMatcher.getAvailableBlocks());
-		responseBody.append("</html>");
+		responseBody.append(PasswordMatcher.getAvailableBlocksXML());
 		response.getWriter().write(responseBody.toString());
 	}
 	
