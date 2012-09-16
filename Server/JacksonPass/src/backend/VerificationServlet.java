@@ -1,10 +1,14 @@
 package backend;
 
 import java.io.IOException;
+import java.util.List;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import blocks.ICategory;
 import blocks.PasswordMatcher;
 
 /**
@@ -17,7 +21,13 @@ public class VerificationServlet extends HttpServlet {
         super();
     }
 
+    //This one is Bird's Get request
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//    	List<ICategory> categories = PasswordMatcher.getCategories();
+//    	for (ICategory category : categories)
+//    	{
+//    		System.out.println(category.mobileFormat().toString());
+//    	}
     	returnLandingPage(response);
 	}
     

@@ -50,7 +50,6 @@ public class PasswordMatcher {
 			}
 		} catch (Exception e)
 		{
-			//TODO - return more information than just false, need to differentiate between incorrect password and 
 			return false;
 		}
 		return correctPW.equals(password);
@@ -110,9 +109,25 @@ public class PasswordMatcher {
 		xml = generateAvailableBlocksXML();
 	}
 	
+	public static List<ICategory> getCategories()
+	{
+		LinkedList<ICategory> ret = new LinkedList<ICategory>();
+		for (Class category_class : categories)
+		{
+			try {
+				ICategory c = (ICategory) category_class.newInstance();
+				ret.add(c);
+			} catch (InstantiationException e) {
+				e.printStackTrace();
+			} catch (IllegalAccessException e) {
+				e.printStackTrace();
+			}
+		}
+		return ret;
+	}
+	
 	public static List<IBlock> generatePassword(String rawPattern)
 	{
-		//TODO - decide on DELIMITER
 		//Split the raw pattern into "blocks"
 		String[] splits = rawPattern.split("%");
 
@@ -121,7 +136,7 @@ public class PasswordMatcher {
 		for (int i=0; i < splits.length; i++)
 		{
 			String current_raw_string = splits[i];
-			//Probably want to ignore empty splits... TODO check this out once delimiter is decided
+			//Probably want to ignore empty splits...
 			if (current_raw_string.isEmpty())
 			{
 				continue;
@@ -137,10 +152,16 @@ public class PasswordMatcher {
 		return generated_password;
 	}
 	
-	private static IBlock generateBlock(String pattern)
+	public static IBlock generateBlock(String pattern)
 	{
+		//Handle Static Text Blocks as a special case
+		if (pattern.startsWith("{") && pattern.endsWith("}"))
+		{
+			String staticText = pattern.substring(1, pattern.length()-1);
+			System.out.println(staticText);
+			return new StaticTextBlock(staticText);
+		}
 		//Lookup the class for the pattern in the patternmapping
-//		System.out.println("Pattern: "+pattern);
 		Class c = patternmapping.get(pattern);
 		try {
 			return (IBlock) c.newInstance();
@@ -241,6 +262,8 @@ public class PasswordMatcher {
 			//Create and populate an element for each class
 			for (IBlock b : blocktypes)
 			{
+				if (b.getFullName().equals("StaticTextBlock"))
+					continue;
 				//create the block element
 				Element block = doc.createElement("block");
 				Element block_traits = doc.createElement("traits");

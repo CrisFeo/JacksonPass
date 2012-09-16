@@ -1,9 +1,13 @@
 package blocks;
 
 import javax.servlet.http.HttpServletRequest;
+import com.sleepycat.persist.model.Persistent;
 
+@Persistent
 public class StaticTextBlock implements IBlock{
 	private String text;
+	
+	public StaticTextBlock() {}
 	
 	public StaticTextBlock(String text)
 	{
@@ -19,21 +23,20 @@ public class StaticTextBlock implements IBlock{
 	}
 
 	public String getShortName() {
-		return null;
+		return "";
 	}
 
 	public String getFullName() {
-		return null;
+		return "StaticTextBlock";
 	}
 
 	public String getPattern() {
-		return null;
+		return "";
 	}
 
 	@Override
 	public String getRepresentation(HttpServletRequest req) {
-		// TODO Auto-generated method stub
-		return null;
+		return text;
 	}
 	
 }

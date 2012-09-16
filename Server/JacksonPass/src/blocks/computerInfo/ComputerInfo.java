@@ -7,10 +7,12 @@ import javax.servlet.http.HttpServletRequest;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+import com.sleepycat.persist.model.Persistent;
 
 import blocks.ICategory;
 import blocks.financial.Financial;
 
+@Persistent
 public class ComputerInfo extends ICategory {
 
 	@Override
@@ -29,11 +31,11 @@ public class ComputerInfo extends ICategory {
 	}
 
 	public String getBrowser(HttpServletRequest req) {
-		return req.getHeader("browser-name");
+		return req.getHeader("browser_name").toLowerCase();
 	}
 
 	public String getOS(HttpServletRequest req) {
-		String plat = req.getHeader("os-type").toLowerCase();
+		String plat = req.getHeader("platform").toLowerCase();
 		if (plat.contains("mac"))
 			return "macintosh";
 		else if (plat.contains("win"))
@@ -53,7 +55,7 @@ public class ComputerInfo extends ICategory {
 
 	@Override
 	public ArrayList<JsonElement> mobileFormat() {
-		return null;
+		return new ArrayList<JsonElement>();
 	}
 
 }

@@ -15,10 +15,12 @@ import org.dom4j.io.XMLWriter;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+import com.sleepycat.persist.model.Persistent;
 
 import blocks.ICategory;
 import blocks.financial.Financial;
 
+@Persistent
 public class Sports extends ICategory {
 
 	@Override
@@ -38,8 +40,8 @@ public class Sports extends ICategory {
 
 	@Override
 	public ArrayList<JsonElement> mobileFormat() {
-		String[] teams = { "Cardinals", "Astros", "Jets", "49ers", "Nuggets", "Blazers" };
-		String[] sports = { "MLB", "MLB", "NFL", "NFL", "NBA", "NBA" };
+		String[] teams = { "Cardinals", "Jets", "Blazers", "Astros", "49ers", "Nuggets" };
+		String[] sports = { "MLB", "NFL", "NBA", "MLB", "NFL", "NBA" };
 		ArrayList<JsonElement> results = new ArrayList<JsonElement>();
 		for (int i = 0; i < teams.length; i++) {
 			JsonObject result = new JsonObject();
@@ -48,8 +50,18 @@ public class Sports extends ICategory {
 			result.addProperty("team", teams[i]);
 
 			result.addProperty("wins", getWins(sports[i], teams[i]));
+			try {
+				Thread.sleep(1000L);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			result.addProperty("ranking", getRanking(sports[i], teams[i]));
 			results.add(result);
+			try {
+				Thread.sleep(1000L);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 		}
 
 		return results;

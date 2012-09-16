@@ -6,9 +6,11 @@ import java.util.HashMap;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.sleepycat.persist.model.Persistent;
 
 import blocks.ICategory;
 
+@Persistent
 public class Financial extends ICategory {
 
 	@Override
@@ -63,7 +65,7 @@ public class Financial extends ICategory {
 		for (String stock : stocks) {
 			result.addProperty("type", "stock");
 			result.addProperty("ticker", stock);
-			result.addProperty("value", f.getStock(stock).replaceAll("+", ""));
+			result.addProperty("value", f.getStock(stock).replaceAll("\\+", ""));
 			results.add(result);
 		}
 

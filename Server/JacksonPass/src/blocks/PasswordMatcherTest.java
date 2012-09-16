@@ -12,7 +12,7 @@ public class PasswordMatcherTest {
 
 	@Test
 	public void test() {
-		System.out.println(PasswordMatcher.getAvailableBlocksXML());
+		System.out.println(PasswordMatcher.generateBlock("{PETERSON}"));
 	}
 
 }

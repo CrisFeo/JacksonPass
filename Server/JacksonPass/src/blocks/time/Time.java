@@ -6,9 +6,11 @@ import java.util.Date;
 import java.util.HashMap;
 
 import com.google.gson.JsonElement;
+import com.sleepycat.persist.model.Persistent;
 
 import blocks.ICategory;
 
+@Persistent
 public class Time extends ICategory {
 
 	@Override
@@ -50,7 +52,7 @@ public class Time extends ICategory {
 
 	@Override
 	public ArrayList<JsonElement> mobileFormat() {
-		return null;
+		return new ArrayList<JsonElement>();
 	}
 
 }

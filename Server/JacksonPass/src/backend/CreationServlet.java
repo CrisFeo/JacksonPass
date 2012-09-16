@@ -23,8 +23,8 @@ public class CreationServlet extends HttpServlet {
     //Just returns the simple interface for testing purposes
     //TODO - make this return all of the available categories and blocks
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//		returnLandingPage(response);
-		returnBlockClassInfoTest(response);
+		returnLandingPage(response);
+//		returnBlockClassInfoTest(response);
 	}
 	
 	private void returnBlockClassInfoTest(HttpServletResponse response) throws IOException
@@ -67,7 +67,6 @@ public class CreationServlet extends HttpServlet {
 			List<IBlock> generatedBlocks = PasswordMatcher.generatePassword(newPassword);
 			User newUser = new User(newUserID, generatedBlocks);
 			//TODO - possibly check for the success of the PUT into the DB. Maybe return a different code depending on what needs to be done
-			@SuppressWarnings("unused")
 			boolean success = UserPersister.putUser(newUser);
 			userAdded(response);
 		}
