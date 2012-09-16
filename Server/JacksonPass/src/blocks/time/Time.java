@@ -3,14 +3,14 @@ package blocks.time;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
+
+import com.google.gson.JsonElement;
 
 import blocks.ICategory;
 
 public class Time extends ICategory {
 
-
-	public Time() {}
-	
 	@Override
 	public String getName() {
 		return "Time";
@@ -18,12 +18,12 @@ public class Time extends ICategory {
 
 	@Override
 	public String getColor() {
-		return "0x000000";
+		return "Stolabitch";
 	}
 
 	@Override
 	public String getBlockColor() {
-		return "0xFFFFFF";
+		return "BIRD!";
 	}
 
 	protected String format(String format) {
@@ -46,6 +46,11 @@ public class Time extends ICategory {
 		assert index > -1;
 
 		return String.valueOf(index + 1);
+	}
+
+	@Override
+	public ArrayList<JsonElement> mobileFormat() {
+		return null;
 	}
 
 }

@@ -12,7 +12,7 @@ public class IXIC extends Financial implements IBlock {
 
 	@Override
 	public String getFullName() {
-		return "Stock Change (ie '+' or '-')";
+		return "Nasdaq Change (ie '+' or '-')";
 	}
 
 	@Override

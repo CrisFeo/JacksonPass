@@ -1,6 +1,7 @@
 package blocks.sports;
 
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -36,20 +37,22 @@ public class Sports extends ICategory {
 	}
 
 	@Override
-	public JsonElement mobileFormat() {
+	public ArrayList<JsonElement> mobileFormat() {
 		String[] teams = { "Cardinals", "Astros", "Jets", "49ers", "Nuggets", "Blazers" };
 		String[] sports = { "MLB", "MLB", "NFL", "NFL", "NBA", "NBA" };
-		JsonObject result = new JsonObject();
+		ArrayList<JsonElement> results = new ArrayList<JsonElement>();
 		for (int i = 0; i < teams.length; i++) {
+			JsonObject result = new JsonObject();
 			result.addProperty("type", "sport");
 			result.addProperty("sport", sports[i]);
 			result.addProperty("team", teams[i]);
 
 			result.addProperty("wins", getWins(sports[i], teams[i]));
 			result.addProperty("ranking", getRanking(sports[i], teams[i]));
+			results.add(result);
 		}
 
-		return result;
+		return results;
 	}
 
 	private String getApiUrl(String sport) {

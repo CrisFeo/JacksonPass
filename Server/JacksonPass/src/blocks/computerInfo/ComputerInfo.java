@@ -1,13 +1,18 @@
 package blocks.computerInfo;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 import javax.servlet.http.HttpServletRequest;
 
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+
 import blocks.ICategory;
+import blocks.financial.Financial;
 
 public class ComputerInfo extends ICategory {
 
-	public ComputerInfo() {}
-	
 	@Override
 	public String getName() {
 		return "Computer Info";
@@ -15,12 +20,12 @@ public class ComputerInfo extends ICategory {
 
 	@Override
 	public String getColor() {
-		return "0x000000";
+		return "Fuck Ben";
 	}
 
 	@Override
 	public String getBlockColor() {
-		return "0xFFFFFF";
+		return "Suck my Dick";
 	}
 
 	public String getBrowser(HttpServletRequest req) {
@@ -44,6 +49,11 @@ public class ComputerInfo extends ICategory {
 		else
 			return plat.split(" ")[0];
 
+	}
+
+	@Override
+	public ArrayList<JsonElement> mobileFormat() {
+		return null;
 	}
 
 }
