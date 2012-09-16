@@ -8,6 +8,53 @@ hide {
 	height: 0;
 }
 
+/* Block Styling */
+.CategoryBlock .block_left {
+	background: url(../assets/block_left.png);
+	width: 12px;
+	height: 30px;
+	
+	float: left;
+}
+
+.CategoryBlock .block_middle {
+	background: url(../assets/block_middle.png) repeat-x;
+	height: 30px;
+	
+	float: left;
+}
+
+.CategoryBlock .block_right {
+	background: url(../assets/block_right.png);
+	width: 12px;
+	height: 30px;
+	
+	float: left;
+}
+
+.CategoryBlock .block_middle div {
+	margin-top: 6px;
+	padding: 0 2px;
+	height: 19px;
+}
+
+#PasswordCanvas .CategoryBlock .block_right {
+	background-image: url(../assets/block_right_locked.png);
+}
+
+#PasswordCanvas .CategoryBlock .block_left {
+	background-image: url(../assets/block_left_locked.png);
+}
+
+#PasswordCanvas .CategoryBlock:last-child .block_right {
+	background-image: url(../assets/block_right.png);
+}
+
+#PasswordCanvas .CategoryBlock:first-child .block_left {
+	background-image: url(../assets/block_left.png);
+}
+
+
 /* Dynamic Category Styles */
 #CategoryContainer {
 	height: 300px;
@@ -34,6 +81,9 @@ hide {
 	border-radius: 4px;
 }
 
+.CategoryBlocks .CategoryBlock {
+	margin-bottom: 4px;
+}
 
 .CategoryLabel {
 	padding-left: 4px;
@@ -41,11 +91,7 @@ hide {
 
 
 .CategoryBlock {
-	padding: 4px;
-	margin-bottom: 4px;
-	
-	border: 1px solid #372D23;
-	border-radius: 2px;
+	height: 30px;
 }
 
 /* Password Canvas Styles */
@@ -64,12 +110,9 @@ hide {
 	float: left;
 }
 
-.CanvasSpacer {
-	height: 1px;
-}
-
-.CanvasBlock {
-	border: 1px solid #372D23;
+#PasswordCanvas .CategoryBlock {
+	margin: 0 -3px;
+	margin-left: -4px;
 }
 
 .TextBlock {
@@ -79,6 +122,10 @@ hide {
 	height: 28px;
 }
 
+#PasswordCanvas .TextBlock div {
+	padding: 0;
+}
+
 .TextBlock p {
 	margin: 0;
 	padding: 4px;
@@ -86,4 +133,8 @@ hide {
 
 .TextBlock input {
 	
+}
+
+.HelpText {
+	padding: 7px;
 }

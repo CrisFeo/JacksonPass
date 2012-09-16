@@ -6,7 +6,7 @@ var Views = {};
 Views.TextBlock = function() {
 	this.elt = ich.CategoryBlock({block_color: "white"})
 		.addClass('TextBlock');
-	this.textElt = $('<p>');
+	this.textElt = $('<p>').addClass('value');
 }
 
 Views.TextBlock.prototype.enable = function(e) {
@@ -21,7 +21,7 @@ Views.TextBlock.prototype.enable = function(e) {
 		.width(50)
 		.blur({thisObj: classRef}, classRef.disable);
 	classRef.textElt.remove();
-	classRef.elt.append(newText);
+	classRef.elt.find('.block_middle').append(newText);
 	classRef.textElt = newText;
 	newText.autoGrowInput({comfortZone: 10, minWidth:50}).focus();
 }
@@ -33,10 +33,11 @@ Views.TextBlock.prototype.disable = function(e) {
 	}
 	var text = classRef.textElt.val();
 	var newText = $('<p>')
+		.addClass('value')
 		.html(text)
 		.click({thisObj: classRef}, classRef.enable);
 	classRef.textElt.remove();
-	classRef.elt.append(newText);
+	classRef.elt.find('.block_middle').append(newText);
 	classRef.textElt = newText;
 }
 

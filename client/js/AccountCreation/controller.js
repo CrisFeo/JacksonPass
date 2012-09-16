@@ -19,6 +19,9 @@ var Controller = {
 		Controller.PasswordCanvas.sortable({
 			helper: 'clone',
 			axis: false,
+			update: function() {
+				Controller.PasswordCanvas.find('.HelpText').remove();
+			},
 			beforeStop: function(event, ui) {
 				if (!Util.overlaps(ui.helper, Controller.PasswordCanvas)) {
 					//Delete the block
@@ -86,7 +89,7 @@ var Controller = {
 				position = $(ui.item).index();
 				oldList  = $(ui.item).parent();
 				clone.data("model", model);
-				ui.helper.html(model.short_name);
+				ui.helper.find('.block_middle div').html(model.short_name);
 				ui.helper.width('auto');
 			},
 			beforeStop: function(event, ui) {
@@ -96,7 +99,7 @@ var Controller = {
 			stop: function(event, ui) {
 				if (position == 0) oldList.prepend(clone);
 				else before.after(clone);
-				ui.item.html(model.short_name);
+				ui.item.find('.block_middle div').html(model.short_name);
 			},
 			cursor: "move"
 		}).disableSelection();
