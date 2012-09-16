@@ -87,7 +87,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		table = (TableLayout) findViewById(R.id.tablelayout);
 		ServerTask task = new ServerTask();
-		task.execute("http://www.seas.upenn.edu/~jkiske/test.json");
+		task.execute("http://ec2-23-20-105-103.compute-1.amazonaws.com:8080/JacksonServer/Verify");
 		final MediaPlayer close = MediaPlayer.create(getApplicationContext(),
 				R.raw.open2);
 		final MediaPlayer open = MediaPlayer.create(getApplicationContext(),
@@ -309,7 +309,7 @@ public class MainActivity extends Activity {
 					e.printStackTrace();
 				}
 			}
-			for (int i = 0; i < Integer.MAX_VALUE/2; i++){}
+			//for (int i = 0; i < Integer.MAX_VALUE/2; i++){}
 			publishProgress(line);
 			return line;
 		}
