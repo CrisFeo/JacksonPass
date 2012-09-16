@@ -4,30 +4,26 @@ import javax.servlet.http.HttpServletRequest;
 
 import blocks.IBlock;
 
-public class Baseball extends Sports implements IBlock {
+public class CardinalWins extends Sports implements IBlock {
 
 	@Override
 	public String getShortName() {
-		// TODO Auto-generated method stub
-		return null;
+		return "Cardninals Wins";
 	}
 
 	@Override
 	public String getFullName() {
-		// TODO Auto-generated method stub
-		return null;
+		return "St. Louis Cardninals Wins";
 	}
 
 	@Override
 	public String getPattern() {
-		// TODO Auto-generated method stub
-		return null;
+		return "%CardMLBW%";
 	}
 
 	@Override
 	public String getRepresentation(HttpServletRequest req) {
-		// TODO Auto-generated method stub
-		return null;
+		return getWins("MLB", "Cardinals");
 	}
 
 }
