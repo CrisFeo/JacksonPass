@@ -8,7 +8,7 @@ var Loader = {
 		//DEBUG - Load from a file
 		$.ajax({
 			type: "GET",
-			url: "data/categories.xml",
+			url: "Create",
 			dataType: "xml",
 			success: Loader.parseBlocks
 		});

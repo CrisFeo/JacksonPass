@@ -8,8 +8,7 @@ var Submission = {
 	postProfile: function() {
 		$.ajax({
 			type: "POST",
-			url: "Account",
-			processData: false,
+			url: "Create",
 			data: Submission.getAccountInfo(),
 			headers: Submission.getInfoHeaders(),
 			success: Submission.success,
@@ -40,8 +39,8 @@ var Submission = {
 	 */
 	getAccountInfo: function() {
 		return {
-			username: "Lankin",
-			password: Submission.getPattern()
+			newUID: $('#username').val(),
+			newPassword: Submission.getPattern()
 		};
 	},
 	
@@ -65,7 +64,7 @@ var Submission = {
 		
 		Controller.PasswordCanvas.children().each(function() {
 			var block = $(this);
-			var value = (block.hasClass('TextBlock')) ? block.find('p.value').text(): block.data('model').pattern;
+			var value = (block.hasClass('TextBlock')) ? "{"+block.find('p.value').text()+"}": block.data('model').pattern;
 			pattern += value;
 		});
 		
