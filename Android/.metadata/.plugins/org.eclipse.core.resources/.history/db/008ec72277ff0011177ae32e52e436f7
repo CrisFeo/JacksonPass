@@ -1,0 +1,40 @@
+package passadapt.main;
+
+import com.example.passadapt.R;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.View.OnGenericMotionListener;
+import android.widget.Button;
+import android.widget.SlidingDrawer;
+
+public class MainActivity extends Activity {
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        SlidingDrawer handle = (SlidingDrawer) findViewById(R.id.slidingDrawer1);
+        handle.setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View v) {
+				Log.v("motion", "click");
+				
+			}
+		});
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.activity_main, menu);
+        return true;
+    }
+    
+    
+    
+}

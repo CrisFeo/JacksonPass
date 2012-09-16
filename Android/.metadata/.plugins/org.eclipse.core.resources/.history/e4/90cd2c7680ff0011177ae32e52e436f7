@@ -1,0 +1,63 @@
+package passadapt.main;
+
+import java.util.HashMap;
+
+import com.example.passadapt.R;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.graphics.Color;
+import android.graphics.Typeface;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.View.OnGenericMotionListener;
+import android.view.View.OnTouchListener;
+import android.widget.Button;
+import android.widget.SlidingDrawer;
+import android.widget.TableLayout;
+import android.widget.SlidingDrawer.OnDrawerOpenListener;
+import android.widget.SlidingDrawer.OnDrawerScrollListener;
+import android.widget.TableRow;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		createRows();
+
+	}
+
+	public void createRows() {
+		HashMap<String, String> map = new HashMap<String, String>();
+		map.put("Astros wins", "13");
+		map.put("DOW JONES", "+10.44%");
+
+		TableLayout table = (TableLayout) findViewById(R.id.tablelayout);
+		for (String key : map.keySet()) {
+			TableRow row = new TableRow(getApplicationContext());
+			TextView text = new TextView(getApplicationContext());
+			text.setText(key + ": " + map.get(key));
+			new Color();
+			text.setTextColor(Color.rgb(92, 62, 36));
+			text.setTextSize(23);
+			text.setPadding(0, 8, 0, 0);
+			text.setTypeface(Typeface.SERIF, Typeface.ITALIC);
+			row.addView(text);
+			table.addView(row);
+		}
+
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		getMenuInflater().inflate(R.menu.activity_main, menu);
+		return true;
+	}
+
+}

@@ -1,0 +1,47 @@
+package passadapt.main;
+
+import java.util.HashMap;
+
+import com.example.passadapt.R;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.View.OnGenericMotionListener;
+import android.view.View.OnTouchListener;
+import android.widget.Button;
+import android.widget.SlidingDrawer;
+import android.widget.TableLayout;
+import android.widget.SlidingDrawer.OnDrawerOpenListener;
+import android.widget.SlidingDrawer.OnDrawerScrollListener;
+
+public class MainActivity extends Activity {
+
+	@Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        createRows();
+      
+    }
+	
+	public void createRows(){
+		HashMap<String, String> map = new HashMap<String, String>();
+		map.put("Astros wins", "13");
+		map.put("DOW JONES", "+10.44%");
+		
+		TableLayout tv = (TableLayout) findViewById(R.id.tablelayout);
+		
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		getMenuInflater().inflate(R.menu.activity_main, menu);
+		return true;
+	}
+
+}

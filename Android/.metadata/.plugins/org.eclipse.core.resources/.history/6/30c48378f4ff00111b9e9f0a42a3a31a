@@ -1,0 +1,52 @@
+package passwarp.main;
+
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
+import org.apache.http.HttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
+
+import android.app.Activity;
+import android.os.AsyncTask;
+import android.util.Log;
+
+public class ServerTask extends AsyncTask<Void, String, String> {
+	private MainActivity act;
+
+	public ServerTask(MainActivity a) {
+		act = a;
+	}
+
+	@Override
+	protected void doInBackground(String... urls) {
+		Log.v("poop", "loooool");
+		String line = "";
+		for (String url : urls) {
+			DefaultHttpClient client = new DefaultHttpClient();
+			HttpGet httpGet = new HttpGet(url);
+			try {
+				HttpResponse execute = client.execute(httpGet);
+				InputStream content = execute.getEntity().getContent();
+
+				BufferedReader buffer = new BufferedReader(
+						new InputStreamReader(content));
+
+				line = buffer.readLine();
+
+				/*
+				 * char c = (char) buffer.read(); while (c != -1) {
+				 * buf.append(c); c = (char) buffer.read(); }
+				 */
+
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		publishProgress(line);
+	}
+	
+	 @Override
+     protected void onProgressUpdate(String... values) 
+}
