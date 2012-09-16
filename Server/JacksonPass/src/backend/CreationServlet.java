@@ -23,8 +23,8 @@ public class CreationServlet extends HttpServlet {
     //Just returns the simple interface for testing purposes
     //TODO - make this return all of the available categories and blocks
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		returnLandingPage(response);
-//		returnBlockClassInfoTest(response);
+//		returnLandingPage(response);
+		returnBlockClassInfoTest(response);
 	}
 	
 	private void returnBlockClassInfoTest(HttpServletResponse response) throws IOException
@@ -55,6 +55,11 @@ public class CreationServlet extends HttpServlet {
 		//Get all parameters
 		String newUserID = request.getParameter("newUID");
 		String newPassword = request.getParameter("newPassword");
+		if (newUserID == null || newPassword == null)
+		{
+			usernameTaken(response);
+			return;
+		}
 		//check if the username already exists
 		User check = UserPersister.getUser(newUserID);
 		if (check!=null)

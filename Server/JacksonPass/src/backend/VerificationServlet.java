@@ -75,6 +75,7 @@ public class VerificationServlet extends HttpServlet {
 	//Returns a page indicating the supplied username does not exist
 	private void validationFailed(HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
+		response.sendError(401);
 		StringBuffer responseBody = new StringBuffer();
 		//TODO - return an actual response, talk to feo
 		responseBody.append("INVALID PASSWORD!!!");

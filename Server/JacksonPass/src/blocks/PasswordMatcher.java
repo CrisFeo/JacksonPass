@@ -161,8 +161,11 @@ public class PasswordMatcher {
 			System.out.println(staticText);
 			return new StaticTextBlock(staticText);
 		}
+		pattern = "%" + pattern + "%";
 		//Lookup the class for the pattern in the patternmapping
 		Class c = patternmapping.get(pattern);
+		if (c == null)
+			return null;
 		try {
 			return (IBlock) c.newInstance();
 		} catch (InstantiationException e) {

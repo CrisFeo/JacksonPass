@@ -11,7 +11,9 @@ import java.util.HashMap;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
+import com.sleepycat.persist.model.Persistent;
 
+@Persistent
 public abstract class ICategory {
 	public abstract String getName();
 
