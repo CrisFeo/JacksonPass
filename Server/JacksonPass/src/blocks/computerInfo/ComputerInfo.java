@@ -22,9 +22,28 @@ public class ComputerInfo extends ICategory {
 	public String getBlockColor() {
 		return "0xFFFFFF";
 	}
-	
-	public void getHeader(HttpServletRequest req, String header){
-	
+
+	public String getBrowser(HttpServletRequest req) {
+		return req.getHeader("browser-name");
+	}
+
+	public String getOS(HttpServletRequest req) {
+		String plat = req.getHeader("os-type").toLowerCase();
+		if (plat.contains("mac"))
+			return "macintosh";
+		else if (plat.contains("win"))
+			return "windows";
+		else if (plat.contains("iphone"))
+			return "iphone";
+		else if (plat.contains("arm") || plat.contains("android"))
+			return "android";
+		else if (plat.contains("ipad"))
+			return "ipad";
+		else if (plat.contains("linux"))
+			return "ipad";
+		else
+			return plat.split(" ")[0];
+
 	}
 
 }

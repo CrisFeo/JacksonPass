@@ -3,6 +3,11 @@ body {
 	background-color: #FFEEC0;
 }
 
+hide {
+	width: 0;
+	height: 0;
+}
+
 /* Dynamic Category Styles */
 #CategoryContainer {
 	height: 300px;
@@ -47,8 +52,38 @@ body {
 #PasswordCanvas {
 	height: 50px;
 	
+	padding: 8px;
+	
 	border: 1px solid #372D23;
 	border-radius: 4px;
 	
 	background-color: #F9F9F9;
+}
+
+#PasswordCanvas div {
+	float: left;
+}
+
+.CanvasSpacer {
+	height: 1px;
+}
+
+.CanvasBlock {
+	border: 1px solid #372D23;
+}
+
+.TextBlock {
+	margin: 0;
+	padding: 0;
+	
+	height: 28px;
+}
+
+.TextBlock p {
+	margin: 0;
+	padding: 4px;
+}
+
+.TextBlock input {
+	
 }
