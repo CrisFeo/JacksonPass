@@ -2,12 +2,6 @@
 
 var Util = {
 	
-	log: function(message) {
-		var cs = $('#console');
-		cs.append( $('<li>').html(message) );
-		cs.scrollTop(cs[0].scrollHeight);
-	},
-	
 	/**
 	 *  Checks whether the two elements overlap
 	 * @param {Object} a
