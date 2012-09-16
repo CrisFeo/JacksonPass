@@ -1,35 +1,41 @@
 package blocks.computerInfo;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 import javax.servlet.http.HttpServletRequest;
 
-import blocks.ICategory;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.sleepycat.persist.model.Persistent;
 
+import blocks.ICategory;
+import blocks.financial.Financial;
+
+@Persistent
 public class ComputerInfo extends ICategory {
 
 	@Override
 	public String getName() {
-		// TODO Auto-generated method stub
-		return null;
+		return "Computer Info";
 	}
 
 	@Override
 	public String getColor() {
-		// TODO Auto-generated method stub
-		return null;
+		return "#EEEEEE";
 	}
 
 	@Override
 	public String getBlockColor() {
-		// TODO Auto-generated method stub
-		return null;
+		return "blue";
 	}
 
 	public String getBrowser(HttpServletRequest req) {
-		return req.getHeader("browser-name");
+		return req.getHeader("browser_name").toLowerCase();
 	}
 
 	public String getOS(HttpServletRequest req) {
-		String plat = req.getHeader("os-type").toLowerCase();
+		String plat = req.getHeader("platform").toLowerCase();
 		if (plat.contains("mac"))
 			return "macintosh";
 		else if (plat.contains("win"))
@@ -45,6 +51,11 @@ public class ComputerInfo extends ICategory {
 		else
 			return plat.split(" ")[0];
 
+	}
+
+	@Override
+	public ArrayList<JsonElement> mobileFormat() {
+		return new ArrayList<JsonElement>();
 	}
 
 }

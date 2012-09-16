@@ -1,8 +1,12 @@
 package blocks.computerInfo;
 
 import javax.servlet.http.HttpServletRequest;
+
+import com.sleepycat.persist.model.Persistent;
+
 import blocks.IBlock;
 
+@Persistent
 public class Platform extends ComputerInfo implements IBlock {
 
 	@Override

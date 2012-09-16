@@ -2,6 +2,52 @@
 var Views = {};
 
 
+/* ----- View for a plaintext block ----- */
+Views.TextBlock = function() {
+	this.elt = ich.CategoryBlock({block_color: "gray"})
+		.addClass('TextBlock');
+	this.textElt = $('<p>').addClass('value');
+}
+
+Views.TextBlock.prototype.enable = function(e) {
+	var classRef = this;
+	if (e && e.data.thisObj) {
+		classRef = e.data.thisObj;
+	}
+	var text = classRef.textElt.html();
+	var newText = $('<input>')
+		.val(text)
+		.attr('type', 'text')
+		.width(50)
+		.blur({thisObj: classRef}, classRef.disable)
+		.keydown(function(e){
+			//Enter keypress
+			if (e.which==13) {
+				newText.blur();
+			}
+		});
+	classRef.textElt.remove();
+	classRef.elt.find('.block_middle').append(newText);
+	classRef.textElt = newText;
+	newText.autoGrowInput({comfortZone: 10, minWidth:50}).focus();
+}
+
+Views.TextBlock.prototype.disable = function(e) {
+	var classRef = this;
+	if (e && e.data.thisObj) {
+		classRef = e.data.thisObj;
+	}
+	var text = classRef.textElt.val();
+	var newText = $('<p>')
+		.addClass('value')
+		.html(text)
+		.click({thisObj: classRef}, classRef.enable);
+	classRef.textElt.remove();
+	classRef.elt.find('.block_middle').append(newText);
+	classRef.textElt = newText;
+}
+
+
 /* ----- View for a block in a category ----- */
 Views.Block = function(model) {
 	this.model = model;

@@ -1,17 +1,25 @@
 /* General Styles */
 body {
-	background-color: #FFEEC0;
+	background-color: #F9F9F9;
 }
+
+hide {
+	width: 0;
+	height: 0;
+}
+
 
 /* Dynamic Category Styles */
 #CategoryContainer {
 	height: 300px;
-	overflow-x: scroll;
+	overflow-x: auto;
+	overflow-y: hidden;
 	
-	border: 1px solid #372D23;
+	border-bottom: 1px solid #E0E0E0;
+	border-top: 1px solid #E0E0E0;
 	border-radius: 2px;
 	
-	background-color: #F9F9F9;
+	background-color: white;
 }
 
 .Category {
@@ -25,10 +33,12 @@ body {
 	height: 90%;
 	padding: 8px;
 	
-	border: 1px solid #372D23;
 	border-radius: 4px;
 }
 
+.CategoryBlocks .CategoryBlock {
+	margin-bottom: 4px;
+}
 
 .CategoryLabel {
 	padding-left: 4px;
@@ -36,19 +46,50 @@ body {
 
 
 .CategoryBlock {
-	padding: 4px;
-	margin-bottom: 4px;
-	
-	border: 1px solid #372D23;
-	border-radius: 2px;
+	height: 30px;
 }
 
 /* Password Canvas Styles */
 #PasswordCanvas {
 	height: 50px;
 	
-	border: 1px solid #372D23;
+	padding: 8px;
+	
+	border: 1px solid #E0E0E0;
 	border-radius: 4px;
 	
-	background-color: #F9F9F9;
+	background-color: white;
+}
+
+#PasswordCanvas div {
+	float: left;
+}
+
+#PasswordCanvas .CategoryBlock {
+	margin: 0 -3px;
+	margin-left: -4px;
+}
+
+.TextBlock {
+	margin: 0;
+	padding: 0;
+	
+	height: 28px;
+}
+
+#PasswordCanvas .TextBlock div {
+	padding: 0;
+}
+
+.TextBlock p {
+	margin: 0;
+	padding: 4px;
+}
+
+.TextBlock input {
+	
+}
+
+.HelpText {
+	padding: 7px;
 }

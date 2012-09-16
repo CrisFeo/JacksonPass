@@ -6,6 +6,7 @@
 	<!-- CSS Includes -->
 	<link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles/AccountCreation.css">
+	<link rel="stylesheet" type="text/css" href="styles/colors.css">
 	
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -14,6 +15,21 @@
 
 <body>
 	<div class="container-fluid">
+		
+		<div class="row-fluid"><div class="span12"></div></div>
+		
+		<div class="row-fluid">
+			<div class="span1"><h4>Username:</h4></div>
+			<div class="span11"><input id="username" type="text"/></div>
+		</div>
+		
+		<div class="row-fluid">
+			<div class="span1"><h4>Password:</h4></div>
+			<div id="PasswordCanvas" class="span10">
+				<div class="HelpText muted">Drag components here to create your password.</div>
+			</div>
+		</div>
+		
 		<div class="row-fluid"><div class="span12"></div></div>
 		
 		<div class="row-fluid">
@@ -22,14 +38,20 @@
 			</div>
 		</div>
 		
-		<div class="row-fluid"><div class="span12"></div></div>
-		
 		<div class="row-fluid">
-			<div class="span1"><span class="bold">Password Pattern:</span></div>
-			<div id="PasswordCanvas" class="span10">
-				<!-- The components of your password go here -->
+			<br/>
+			<div class="span12"><button id="submit" class="btn btn-primary">Create Account</button></div>
+		</div>
+		
+		<!--
+		<div class="row-fluid" style="margin-top: 10px">
+			Console:
+			<div id="console" style="overflow-y: scroll; background: white; border: 1px solid #666; height: 300px; width: 100%" class="span12">
+				
 			</div>
 		</div>
+		-->
+		
 	</div>
 	
 	
@@ -43,8 +65,13 @@
 	</script>
 	
 	<script id="CategoryBlock" type="text/html">
-		<div class="CategoryBlock" style="background-color: {{block_color}}">{{full_name}}</div>
+		<div class="CategoryBlock">
+			<div class="block_left {{block_color}}"></div>
+			<div class="block_middle {{block_color}}"><div>{{full_name}}</div></div>
+			<div class="block_right {{block_color}}"></div>
+		</div>
 	</script>
+	
 	
 	
 	<!-- Load scripts here (at the end) to speed up the inital page load -->
@@ -54,14 +81,15 @@
 	<script src="lib/icanhaz.min.js"></script>
 	<script src="lib/jquery-ui-1.8.23.custom.min.js"></script>
 	<script src="lib/bootstrap/js/bootstrap.js"></script>
+	<script src="lib/textGrow.js"></script>
 	
 	<!-- Application Logic -->
 	<script src="js/AccountCreation/loader.js"></script>
+	<script src="js/AccountCreation/submitter.js"></script>
 	<script src="js/AccountCreation/models.js"></script>
 	<script src="js/AccountCreation/views.js"></script>
 	<script src="js/AccountCreation/controller.js"></script>
-	<script src="js/AccountCreation/passwordcanvas.js"></script>
-	
+	<script src="js/util.js"></script>
 	
 	<!-- //Retrieve all templates defined in HTML -->
 	<script> ich.refresh(); </script>

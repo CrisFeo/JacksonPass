@@ -1,8 +1,12 @@
 package blocks.time;
 
 import javax.servlet.http.HttpServletRequest;
+
+import com.sleepycat.persist.model.Persistent;
+
 import blocks.IBlock;
 
+@Persistent
 public class Day extends Time implements IBlock {
 
 	@Override

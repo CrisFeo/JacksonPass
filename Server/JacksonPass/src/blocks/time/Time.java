@@ -3,27 +3,29 @@ package blocks.time;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
+
+import com.google.gson.JsonElement;
+import com.sleepycat.persist.model.Persistent;
 
 import blocks.ICategory;
 
+@Persistent
 public class Time extends ICategory {
 
 	@Override
 	public String getName() {
-		// TODO Auto-generated method stub
-		return null;
+		return "Time";
 	}
 
 	@Override
 	public String getColor() {
-		// TODO Auto-generated method stub
-		return null;
+		return "#EEEEEE";
 	}
 
 	@Override
 	public String getBlockColor() {
-		// TODO Auto-generated method stub
-		return null;
+		return "red";
 	}
 
 	protected String format(String format) {
@@ -46,6 +48,11 @@ public class Time extends ICategory {
 		assert index > -1;
 
 		return String.valueOf(index + 1);
+	}
+
+	@Override
+	public ArrayList<JsonElement> mobileFormat() {
+		return new ArrayList<JsonElement>();
 	}
 
 }

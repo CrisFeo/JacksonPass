@@ -1,8 +1,12 @@
 package blocks.financial;
 
 import javax.servlet.http.HttpServletRequest;
+
+import com.sleepycat.persist.model.Persistent;
+
 import blocks.IBlock;
 
+@Persistent
 public class IXIC extends Financial implements IBlock {
 
 	@Override
@@ -12,7 +16,7 @@ public class IXIC extends Financial implements IBlock {
 
 	@Override
 	public String getFullName() {
-		return "Stock Change (ie '+' or '-')";
+		return "Nasdaq Change (ie '+' or '-')";
 	}
 
 	@Override

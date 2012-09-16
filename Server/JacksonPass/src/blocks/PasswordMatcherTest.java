@@ -12,8 +12,7 @@ public class PasswordMatcherTest {
 
 	@Test
 	public void test() {
-		List<IBlock> password = PasswordMatcher.generatePassword("JACKSON!%");
-		assert(password.size()!=0);
+		System.out.println(PasswordMatcher.generateBlock("{PETERSON}"));
 	}
 
 }

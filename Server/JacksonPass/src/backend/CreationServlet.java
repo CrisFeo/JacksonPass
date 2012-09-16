@@ -29,11 +29,9 @@ public class CreationServlet extends HttpServlet {
 	
 	private void returnBlockClassInfoTest(HttpServletResponse response) throws IOException
 	{
-		response.setContentType("text/html");
+		response.setContentType("application/xml");
 		StringBuffer responseBody = new StringBuffer();
-		responseBody.append("<html>");
-		responseBody.append(PasswordMatcher.getAvailableBlocks());
-		responseBody.append("</html>");
+		responseBody.append(PasswordMatcher.getAvailableBlocksXML());
 		response.getWriter().write(responseBody.toString());
 	}
 	
@@ -57,6 +55,11 @@ public class CreationServlet extends HttpServlet {
 		//Get all parameters
 		String newUserID = request.getParameter("newUID");
 		String newPassword = request.getParameter("newPassword");
+		if (newUserID == null || newPassword == null)
+		{
+			usernameTaken(response);
+			return;
+		}
 		//check if the username already exists
 		User check = UserPersister.getUser(newUserID);
 		if (check!=null)
@@ -69,7 +72,6 @@ public class CreationServlet extends HttpServlet {
 			List<IBlock> generatedBlocks = PasswordMatcher.generatePassword(newPassword);
 			User newUser = new User(newUserID, generatedBlocks);
 			//TODO - possibly check for the success of the PUT into the DB. Maybe return a different code depending on what needs to be done
-			@SuppressWarnings("unused")
 			boolean success = UserPersister.putUser(newUser);
 			userAdded(response);
 		}
