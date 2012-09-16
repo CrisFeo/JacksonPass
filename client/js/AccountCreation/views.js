@@ -4,7 +4,7 @@ var Views = {};
 
 /* ----- View for a plaintext block ----- */
 Views.TextBlock = function() {
-	this.elt = ich.CategoryBlock({block_color: "white"})
+	this.elt = ich.CategoryBlock({block_color: "gray"})
 		.addClass('TextBlock');
 	this.textElt = $('<p>').addClass('value');
 }
@@ -19,7 +19,13 @@ Views.TextBlock.prototype.enable = function(e) {
 		.val(text)
 		.attr('type', 'text')
 		.width(50)
-		.blur({thisObj: classRef}, classRef.disable);
+		.blur({thisObj: classRef}, classRef.disable)
+		.keydown(function(e){
+			//Enter keypress
+			if (e.which==13) {
+				newText.blur();
+			}
+		});
 	classRef.textElt.remove();
 	classRef.elt.find('.block_middle').append(newText);
 	classRef.textElt = newText;

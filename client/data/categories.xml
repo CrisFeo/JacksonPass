@@ -25,8 +25,8 @@
 		</blocks>
 		<traits>
 			<trait name="name">Weekday</trait>
-			<trait name="cat_color">#F84028</trait>
-			<trait name="block_color">#E38200</trait>
+			<trait name="cat_color">#eee</trait>
+			<trait name="block_color">red</trait>
 		</traits>
 	</category>
 	<category>
@@ -41,8 +41,8 @@
 		</blocks>
 		<traits>
 			<trait name="name">Month</trait>
-			<trait name="cat_color">#67AE44</trait>
-			<trait name="block_color">#E38200</trait>
+			<trait name="cat_color">#eee</trait>
+			<trait name="block_color">green</trait>
 		</traits>
 	</category>
 </categories>

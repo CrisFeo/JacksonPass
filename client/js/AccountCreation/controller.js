@@ -33,6 +33,9 @@ var Controller = {
 		
 		//Set up handling of static text entry blocks
 		Controller.PasswordCanvas.click(Controller.addTextBlock);
+		
+		//Set up the handler for form submission
+		$('#submit').click(Submission.postProfile);
 	},
 	
 	
