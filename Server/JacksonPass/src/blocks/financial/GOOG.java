@@ -1,8 +1,12 @@
 package blocks.financial;
 
 import javax.servlet.http.HttpServletRequest;
+
+import com.sleepycat.persist.model.Persistent;
+
 import blocks.IBlock;
 
+@Persistent
 public class GOOG extends Financial implements IBlock {
 
 	@Override
