@@ -8,7 +8,7 @@ var Submission = {
 	postProfile: function() {
 		$.ajax({
 			type: "POST",
-			url: "Account",
+			url: "Create",
 			processData: false,
 			data: Submission.getAccountInfo(),
 			headers: Submission.getInfoHeaders(),
@@ -40,8 +40,8 @@ var Submission = {
 	 */
 	getAccountInfo: function() {
 		return {
-			username: "Lankin",
-			password: Submission.getPattern()
+			newUID: $('#username').val(),
+			newPassword: Submission.getPattern()
 		};
 	},
 	
