@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backrepeat2" >
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left|top"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <Chronometer
+        android:id="@+id/chrono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="70"
+        android:gravity="bottom|center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Slide up for details"
+            android:textColor="#ffe6be"
+            android:textSize="25dip"
+            android:textStyle="italic"
+            android:typeface="sans" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow" />
+
+    </LinearLayout>
+
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:bottomOffset="11dip"
+        android:content="@+id/content"
+        android:handle="@+id/handle"
+        android:topOffset="-8dip" >
+
+        <Button
+            android:id="@+id/handle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tileable_wood_texture_2x_crop_h2"
+            android:paddingBottom="7dip" />
+
+        <ScrollView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="109dp" >
+
+           
+
+                <TableLayout
+                    android:id="@+id/tablelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/backrepeat"
+                    android:paddingLeft="10dip" >
+                </TableLayout>
+        </ScrollView>
+    </SlidingDrawer>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="570dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PassAdapt"
+            android:textSize="50dip"
+            android:textStyle="italic"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+</RelativeLayout>

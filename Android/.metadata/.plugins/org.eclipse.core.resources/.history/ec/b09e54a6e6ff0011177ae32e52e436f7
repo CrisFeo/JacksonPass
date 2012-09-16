@@ -1,0 +1,7 @@
+package passwarp.main;
+
+import android.os.AsyncTask;
+
+public class ServerTask extends AsyncTask<String, String, String> {
+
+}

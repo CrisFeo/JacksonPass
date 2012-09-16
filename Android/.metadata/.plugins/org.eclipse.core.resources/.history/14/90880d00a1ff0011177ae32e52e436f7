@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+   	android:id="@+id/rel"
+   	android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backrepeat2" >
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left|top"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#E6E6E6"
+            android:text="Slide up for details"
+            android:textStyle="italic"
+            android:typeface="sans" />
+
+    </LinearLayout>
+
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:bottomOffset="11dip"
+        android:content="@+id/content"
+        android:handle="@+id/handle"
+        android:topOffset="-8dip" >
+
+        <Button
+            android:id="@+id/handle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tileable_wood_texture_2x_crop_h2"
+            android:paddingBottom="7dip" />
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="109dp"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:id="@+id/tablelayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/backrepeat"
+                android:paddingLeft="10dip" >
+            </TableLayout>
+        </LinearLayout>
+    </SlidingDrawer>
+
+</RelativeLayout>

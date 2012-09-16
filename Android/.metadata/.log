@@ -1,0 +1,2191 @@
+!SESSION 2012-09-15 14:49:41.457 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86 -data /home/ericberdinis/JacksonPass/Android
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-15 15:12:35.001
+!MESSAGE Failed to load properties file for project 'PassAdapt'
+
+!ENTRY org.eclipse.ui 4 4 2012-09-15 15:14:39.122
+!MESSAGE Invalid preference page path: XML Syntax
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-15 15:26:05.511
+!MESSAGE activity_main.xml: The content attribute is must refer to an existing child.
+!STACK 0
+java.lang.IllegalArgumentException: The content attribute is must refer to an existing child.
+	at android.widget.SlidingDrawer.onFinishInflate(SlidingDrawer.java:246)
+	at android.view.LayoutInflater.rInflate_Original(LayoutInflater.java:747)
+	at android.view.LayoutInflater_Delegate.rInflate(LayoutInflater_Delegate.java:64)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:711)
+	at android.view.LayoutInflater.rInflate_Original(LayoutInflater.java:742)
+	at android.view.LayoutInflater_Delegate.rInflate(LayoutInflater_Delegate.java:64)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:711)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:489)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:372)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.inflate(RenderSessionImpl.java:321)
+	at com.android.layoutlib.bridge.Bridge.createSession(Bridge.java:324)
+	at com.android.ide.common.rendering.LayoutLibrary.createSession(LayoutLibrary.java:325)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.RenderService.createRenderSession(RenderService.java:372)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.renderWithBridge(GraphicalEditorPart.java:1640)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.recomputeLayout(GraphicalEditorPart.java:1391)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.onXmlModelChanged(GraphicalEditorPart.java:1353)
+	at com.android.ide.eclipse.adt.internal.editors.layout.LayoutEditorDelegate.delegateXmlModelChanged(LayoutEditorDelegate.java:395)
+	at com.android.ide.eclipse.adt.internal.editors.common.CommonXmlEditor.xmlModelChanged(CommonXmlEditor.java:328)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor$XmlModelStateListener.modelChanged(AndroidXmlEditor.java:1610)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor.wrapEditXmlModel(AndroidXmlEditor.java:1084)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor.wrapUndoEditXmlModel(AndroidXmlEditor.java:1160)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.ClipboardSupport.deleteSelection(ClipboardSupport.java:205)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.LayoutCanvas$8.run(LayoutCanvas.java:1200)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:119)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:476)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.ui.internal.handlers.HandlerService.executeCommand(HandlerService.java:169)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.executeCommand(WorkbenchKeyboard.java:468)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.press(WorkbenchKeyboard.java:786)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.processKeyEvent(WorkbenchKeyboard.java:885)
+	at org.eclipse.ui.internal.keys.OutOfOrderListener.handleEvent(OutOfOrderListener.java:76)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1258)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1282)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1267)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1294)
+	at org.eclipse.swt.widgets.Widget.gtk_key_press_event(Widget.java:730)
+	at org.eclipse.swt.widgets.Control.gtk_key_press_event(Control.java:3019)
+	at org.eclipse.swt.widgets.Composite.gtk_key_press_event(Composite.java:734)
+	at org.eclipse.swt.widgets.Tree.gtk_key_press_event(Tree.java:2002)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:1743)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:5016)
+	at org.eclipse.swt.widgets.Tree.windowProc(Tree.java:3530)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4408)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:8422)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1245)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2276)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3207)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY org.eclipse.jface 4 2 2012-09-15 15:26:05.908
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jface".
+!STACK 0
+java.lang.NullPointerException
+	at com.android.ide.eclipse.adt.internal.editors.layout.uimodel.UiViewElementNode.getIcon(UiViewElementNode.java:147)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.OutlinePage$LabelProvider.getImage(OutlinePage.java:774)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.OutlinePage$LabelProvider.update(OutlinePage.java:794)
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:152)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:938)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$UpdateItemSafeRunnable.run(AbstractTreeViewer.java:106)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:1018)
+	at org.eclipse.jface.viewers.StructuredViewer$UpdateItemSafeRunnable.run(StructuredViewer.java:485)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.StructuredViewer.updateItem(StructuredViewer.java:2167)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.updateChildren(AbstractTreeViewer.java:2730)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefreshStruct(AbstractTreeViewer.java:1908)
+	at org.eclipse.jface.viewers.TreeViewer.internalRefreshStruct(TreeViewer.java:721)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefreshStruct(AbstractTreeViewer.java:1915)
+	at org.eclipse.jface.viewers.TreeViewer.internalRefreshStruct(TreeViewer.java:721)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefreshStruct(AbstractTreeViewer.java:1915)
+	at org.eclipse.jface.viewers.TreeViewer.internalRefreshStruct(TreeViewer.java:721)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefresh(AbstractTreeViewer.java:1883)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefresh(AbstractTreeViewer.java:1840)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefresh(AbstractTreeViewer.java:1826)
+	at org.eclipse.jface.viewers.StructuredViewer$7.run(StructuredViewer.java:1508)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1443)
+	at org.eclipse.jface.viewers.TreeViewer.preservingSelection(TreeViewer.java:403)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1404)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1506)
+	at org.eclipse.jface.viewers.ColumnViewer.refresh(ColumnViewer.java:537)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1465)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.OutlinePage.refreshIcons(OutlinePage.java:274)
+	at com.android.ide.eclipse.adt.internal.editors.layout.LayoutEditorDelegate$LintJobListener.run(LayoutEditorDelegate.java:512)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3563)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3212)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-15 15:26:10.656
+!MESSAGE activity_main.xml: The content attribute is must refer to an existing child.
+!STACK 0
+java.lang.IllegalArgumentException: The content attribute is must refer to an existing child.
+	at android.widget.SlidingDrawer.onFinishInflate(SlidingDrawer.java:246)
+	at android.view.LayoutInflater.rInflate_Original(LayoutInflater.java:747)
+	at android.view.LayoutInflater_Delegate.rInflate(LayoutInflater_Delegate.java:64)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:711)
+	at android.view.LayoutInflater.rInflate_Original(LayoutInflater.java:742)
+	at android.view.LayoutInflater_Delegate.rInflate(LayoutInflater_Delegate.java:64)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:711)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:489)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:372)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.inflate(RenderSessionImpl.java:321)
+	at com.android.layoutlib.bridge.Bridge.createSession(Bridge.java:324)
+	at com.android.ide.common.rendering.LayoutLibrary.createSession(LayoutLibrary.java:325)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.RenderService.createRenderSession(RenderService.java:372)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.renderWithBridge(GraphicalEditorPart.java:1640)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.recomputeLayout(GraphicalEditorPart.java:1391)
+	at com.android.ide.eclipse.adt.internal.editors.layout.LayoutEditorDelegate.recomputeLayout(LayoutEditorDelegate.java:403)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.SelectionManager.setSelection(SelectionManager.java:270)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.LayoutCanvasViewer.setSelection(LayoutCanvasViewer.java:120)
+	at org.eclipse.jface.viewers.Viewer.setSelection(Viewer.java:394)
+	at org.eclipse.ui.forms.editor.FormEditor$FormEditorSelectionProvider.setSelection(FormEditor.java:107)
+	at com.android.ide.eclipse.adt.internal.editors.layout.LayoutEditorDelegate$1.selectionChanged(LayoutEditorDelegate.java:577)
+	at com.android.ide.eclipse.adt.internal.editors.XmlEditorMultiOutline.setSelection(XmlEditorMultiOutline.java:171)
+	at com.android.ide.eclipse.adt.internal.editors.XmlEditorMultiOutline.selectionChanged(XmlEditorMultiOutline.java:130)
+	at org.eclipse.ui.views.contentoutline.ContentOutlinePage$1.run(ContentOutlinePage.java:112)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.views.contentoutline.ContentOutlinePage.fireSelectionChanged(ContentOutlinePage.java:110)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.OutlinePage.fireSelectionChanged(OutlinePage.java:613)
+	at org.eclipse.ui.views.contentoutline.ContentOutlinePage.selectionChanged(ContentOutlinePage.java:170)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.OutlinePage.selectionChanged(OutlinePage.java:650)
+	at org.eclipse.jface.viewers.Viewer$2.run(Viewer.java:164)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.Viewer.fireSelectionChanged(Viewer.java:162)
+	at org.eclipse.jface.viewers.StructuredViewer.updateSelection(StructuredViewer.java:2188)
+	at org.eclipse.jface.viewers.StructuredViewer.handleSelect(StructuredViewer.java:1211)
+	at org.eclipse.jface.viewers.StructuredViewer$4.widgetSelected(StructuredViewer.java:1241)
+	at org.eclipse.jface.util.OpenStrategy.fireSelectionEvent(OpenStrategy.java:239)
+	at org.eclipse.jface.util.OpenStrategy.access$4(OpenStrategy.java:233)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:403)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1258)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3588)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3209)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-15 15:26:10.835
+!MESSAGE activity_main.xml: The content attribute is must refer to an existing child.
+!STACK 0
+java.lang.IllegalArgumentException: The content attribute is must refer to an existing child.
+	at android.widget.SlidingDrawer.onFinishInflate(SlidingDrawer.java:246)
+	at android.view.LayoutInflater.rInflate_Original(LayoutInflater.java:747)
+	at android.view.LayoutInflater_Delegate.rInflate(LayoutInflater_Delegate.java:64)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:711)
+	at android.view.LayoutInflater.rInflate_Original(LayoutInflater.java:742)
+	at android.view.LayoutInflater_Delegate.rInflate(LayoutInflater_Delegate.java:64)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:711)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:489)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:372)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.inflate(RenderSessionImpl.java:321)
+	at com.android.layoutlib.bridge.Bridge.createSession(Bridge.java:324)
+	at com.android.ide.common.rendering.LayoutLibrary.createSession(LayoutLibrary.java:325)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.RenderService.createRenderSession(RenderService.java:372)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.renderWithBridge(GraphicalEditorPart.java:1640)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.recomputeLayout(GraphicalEditorPart.java:1391)
+	at com.android.ide.eclipse.adt.internal.editors.layout.LayoutEditorDelegate.recomputeLayout(LayoutEditorDelegate.java:403)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.SelectionManager.setSelection(SelectionManager.java:270)
+	at com.android.ide.eclipse.adt.internal.editors.layout.LayoutEditorDelegate$1.selectionChanged(LayoutEditorDelegate.java:583)
+	at com.android.ide.eclipse.adt.internal.editors.XmlEditorMultiOutline.setSelection(XmlEditorMultiOutline.java:171)
+	at com.android.ide.eclipse.adt.internal.editors.XmlEditorMultiOutline.selectionChanged(XmlEditorMultiOutline.java:130)
+	at org.eclipse.ui.views.contentoutline.ContentOutlinePage$1.run(ContentOutlinePage.java:112)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.views.contentoutline.ContentOutlinePage.fireSelectionChanged(ContentOutlinePage.java:110)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.OutlinePage.fireSelectionChanged(OutlinePage.java:613)
+	at org.eclipse.ui.views.contentoutline.ContentOutlinePage.selectionChanged(ContentOutlinePage.java:170)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.OutlinePage.selectionChanged(OutlinePage.java:650)
+	at org.eclipse.jface.viewers.Viewer$2.run(Viewer.java:164)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.Viewer.fireSelectionChanged(Viewer.java:162)
+	at org.eclipse.jface.viewers.StructuredViewer.updateSelection(StructuredViewer.java:2188)
+	at org.eclipse.jface.viewers.StructuredViewer.handleSelect(StructuredViewer.java:1211)
+	at org.eclipse.jface.viewers.StructuredViewer$4.widgetSelected(StructuredViewer.java:1241)
+	at org.eclipse.jface.util.OpenStrategy.fireSelectionEvent(OpenStrategy.java:239)
+	at org.eclipse.jface.util.OpenStrategy.access$4(OpenStrategy.java:233)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:403)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1258)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3588)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3209)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-15 15:26:10.933
+!MESSAGE activity_main.xml: The content attribute is must refer to an existing child.
+!STACK 0
+java.lang.IllegalArgumentException: The content attribute is must refer to an existing child.
+	at android.widget.SlidingDrawer.onFinishInflate(SlidingDrawer.java:246)
+	at android.view.LayoutInflater.rInflate_Original(LayoutInflater.java:747)
+	at android.view.LayoutInflater_Delegate.rInflate(LayoutInflater_Delegate.java:64)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:711)
+	at android.view.LayoutInflater.rInflate_Original(LayoutInflater.java:742)
+	at android.view.LayoutInflater_Delegate.rInflate(LayoutInflater_Delegate.java:64)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:711)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:489)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:372)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.inflate(RenderSessionImpl.java:321)
+	at com.android.layoutlib.bridge.Bridge.createSession(Bridge.java:324)
+	at com.android.ide.common.rendering.LayoutLibrary.createSession(LayoutLibrary.java:325)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.RenderService.createRenderSession(RenderService.java:372)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.renderWithBridge(GraphicalEditorPart.java:1640)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.recomputeLayout(GraphicalEditorPart.java:1391)
+	at com.android.ide.eclipse.adt.internal.editors.layout.LayoutEditorDelegate.recomputeLayout(LayoutEditorDelegate.java:403)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.SelectionManager.setSelection(SelectionManager.java:270)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.LayoutCanvasViewer.setSelection(LayoutCanvasViewer.java:120)
+	at org.eclipse.jface.viewers.Viewer.setSelection(Viewer.java:394)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.selectionChanged(GraphicalEditorPart.java:601)
+	at org.eclipse.ui.internal.AbstractSelectionService.fireSelection(AbstractSelectionService.java:156)
+	at org.eclipse.ui.internal.AbstractSelectionService$1.selectionChanged(AbstractSelectionService.java:62)
+	at org.eclipse.ui.part.PageBookView$5.run(PageBookView.java:255)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:897)
+	at org.eclipse.ui.part.PageBookView$SelectionManager.selectionChanged(PageBookView.java:253)
+	at org.eclipse.ui.part.PageBookView$SelectionProvider.selectionChanged(PageBookView.java:319)
+	at org.eclipse.ui.part.PageBookView.pageSelectionChanged(PageBookView.java:896)
+	at org.eclipse.ui.part.PageBookView.access$2(PageBookView.java:891)
+	at org.eclipse.ui.part.PageBookView$2.selectionChanged(PageBookView.java:163)
+	at org.eclipse.ui.views.contentoutline.ContentOutlinePage$1.run(ContentOutlinePage.java:112)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.views.contentoutline.ContentOutlinePage.fireSelectionChanged(ContentOutlinePage.java:110)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.OutlinePage.fireSelectionChanged(OutlinePage.java:613)
+	at org.eclipse.ui.views.contentoutline.ContentOutlinePage.selectionChanged(ContentOutlinePage.java:170)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.OutlinePage.selectionChanged(OutlinePage.java:650)
+	at org.eclipse.jface.viewers.Viewer$2.run(Viewer.java:164)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.Viewer.fireSelectionChanged(Viewer.java:162)
+	at org.eclipse.jface.viewers.StructuredViewer.updateSelection(StructuredViewer.java:2188)
+	at org.eclipse.jface.viewers.StructuredViewer.handleSelect(StructuredViewer.java:1211)
+	at org.eclipse.jface.viewers.StructuredViewer$4.widgetSelected(StructuredViewer.java:1241)
+	at org.eclipse.jface.util.OpenStrategy.fireSelectionEvent(OpenStrategy.java:239)
+	at org.eclipse.jface.util.OpenStrategy.access$4(OpenStrategy.java:233)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:403)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1258)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3588)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3209)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-15 15:26:11.618
+!MESSAGE activity_main.xml: The content attribute is must refer to an existing child.
+!STACK 0
+java.lang.IllegalArgumentException: The content attribute is must refer to an existing child.
+	at android.widget.SlidingDrawer.onFinishInflate(SlidingDrawer.java:246)
+	at android.view.LayoutInflater.rInflate_Original(LayoutInflater.java:747)
+	at android.view.LayoutInflater_Delegate.rInflate(LayoutInflater_Delegate.java:64)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:711)
+	at android.view.LayoutInflater.rInflate_Original(LayoutInflater.java:742)
+	at android.view.LayoutInflater_Delegate.rInflate(LayoutInflater_Delegate.java:64)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:711)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:489)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:372)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.inflate(RenderSessionImpl.java:321)
+	at com.android.layoutlib.bridge.Bridge.createSession(Bridge.java:324)
+	at com.android.ide.common.rendering.LayoutLibrary.createSession(LayoutLibrary.java:325)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.RenderService.createRenderSession(RenderService.java:372)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.renderWithBridge(GraphicalEditorPart.java:1640)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.recomputeLayout(GraphicalEditorPart.java:1391)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.onXmlModelChanged(GraphicalEditorPart.java:1353)
+	at com.android.ide.eclipse.adt.internal.editors.layout.LayoutEditorDelegate.delegateXmlModelChanged(LayoutEditorDelegate.java:395)
+	at com.android.ide.eclipse.adt.internal.editors.common.CommonXmlEditor.xmlModelChanged(CommonXmlEditor.java:328)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor$XmlModelStateListener.modelChanged(AndroidXmlEditor.java:1610)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor.wrapEditXmlModel(AndroidXmlEditor.java:1084)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor.wrapUndoEditXmlModel(AndroidXmlEditor.java:1160)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.ClipboardSupport.deleteSelection(ClipboardSupport.java:205)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.LayoutCanvas$8.run(LayoutCanvas.java:1200)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:119)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:476)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.ui.internal.handlers.HandlerService.executeCommand(HandlerService.java:169)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.executeCommand(WorkbenchKeyboard.java:468)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.press(WorkbenchKeyboard.java:786)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.processKeyEvent(WorkbenchKeyboard.java:885)
+	at org.eclipse.ui.internal.keys.OutOfOrderListener.handleEvent(OutOfOrderListener.java:76)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1258)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1282)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1267)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1294)
+	at org.eclipse.swt.widgets.Widget.gtk_key_press_event(Widget.java:730)
+	at org.eclipse.swt.widgets.Control.gtk_key_press_event(Control.java:3019)
+	at org.eclipse.swt.widgets.Composite.gtk_key_press_event(Composite.java:734)
+	at org.eclipse.swt.widgets.Tree.gtk_key_press_event(Tree.java:2002)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:1743)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:5016)
+	at org.eclipse.swt.widgets.Tree.windowProc(Tree.java:3530)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4408)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:8422)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1245)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2276)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3207)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY org.eclipse.jface 4 2 2012-09-15 15:26:12.004
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jface".
+!STACK 0
+java.lang.NullPointerException
+	at com.android.ide.eclipse.adt.internal.editors.layout.uimodel.UiViewElementNode.getIcon(UiViewElementNode.java:147)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.OutlinePage$LabelProvider.getImage(OutlinePage.java:774)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.OutlinePage$LabelProvider.update(OutlinePage.java:794)
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:152)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:938)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$UpdateItemSafeRunnable.run(AbstractTreeViewer.java:106)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:1018)
+	at org.eclipse.jface.viewers.StructuredViewer$UpdateItemSafeRunnable.run(StructuredViewer.java:485)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.StructuredViewer.updateItem(StructuredViewer.java:2167)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.updateChildren(AbstractTreeViewer.java:2730)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefreshStruct(AbstractTreeViewer.java:1908)
+	at org.eclipse.jface.viewers.TreeViewer.internalRefreshStruct(TreeViewer.java:721)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefreshStruct(AbstractTreeViewer.java:1915)
+	at org.eclipse.jface.viewers.TreeViewer.internalRefreshStruct(TreeViewer.java:721)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefreshStruct(AbstractTreeViewer.java:1915)
+	at org.eclipse.jface.viewers.TreeViewer.internalRefreshStruct(TreeViewer.java:721)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefresh(AbstractTreeViewer.java:1883)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefresh(AbstractTreeViewer.java:1840)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefresh(AbstractTreeViewer.java:1826)
+	at org.eclipse.jface.viewers.StructuredViewer$7.run(StructuredViewer.java:1508)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1443)
+	at org.eclipse.jface.viewers.TreeViewer.preservingSelection(TreeViewer.java:403)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1404)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1506)
+	at org.eclipse.jface.viewers.ColumnViewer.refresh(ColumnViewer.java:537)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1465)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.OutlinePage.refreshIcons(OutlinePage.java:274)
+	at com.android.ide.eclipse.adt.internal.editors.layout.LayoutEditorDelegate$LintJobListener.run(LayoutEditorDelegate.java:512)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3563)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3212)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-09-15 16:00:12.185
+!MESSAGE activity_main.xml: Couldn't resolve resource @drawable/dark_wood_2x_crop
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-15 16:00:12.196
+!MESSAGE activity_main.xml: Failed to convert @drawable/dark_wood_2x_crop into a drawable
+!STACK 0
+java.lang.NumberFormatException: Color value '@drawable/dark_wood_2x_crop' must start with #
+	at com.android.layoutlib.bridge.impl.ResourceHelper.getColor(ResourceHelper.java:71)
+	at com.android.layoutlib.bridge.impl.ResourceHelper.getDrawable(ResourceHelper.java:248)
+	at android.content.res.BridgeTypedArray.getDrawable(BridgeTypedArray.java:774)
+	at android.view.View.<init>(View.java:2785)
+	at android.widget.TextView.<init>(TextView.java:449)
+	at android.widget.Button.<init>(Button.java:108)
+	at android.widget.Button.<init>(Button.java:104)
+	at sun.reflect.GeneratedConstructorAccessor65.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:532)
+	at android.view.LayoutInflater.createView(LayoutInflater.java:586)
+	at android.view.BridgeInflater.onCreateView(BridgeInflater.java:86)
+	at android.view.LayoutInflater.onCreateView(LayoutInflater.java:653)
+	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:678)
+	at android.view.BridgeInflater.createViewFromTag(BridgeInflater.java:131)
+	at android.view.LayoutInflater.rInflate_Original(LayoutInflater.java:739)
+	at android.view.LayoutInflater_Delegate.rInflate(LayoutInflater_Delegate.java:64)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:711)
+	at android.view.LayoutInflater.rInflate_Original(LayoutInflater.java:742)
+	at android.view.LayoutInflater_Delegate.rInflate(LayoutInflater_Delegate.java:64)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:711)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:489)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:372)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.inflate(RenderSessionImpl.java:321)
+	at com.android.layoutlib.bridge.Bridge.createSession(Bridge.java:324)
+	at com.android.ide.common.rendering.LayoutLibrary.createSession(LayoutLibrary.java:325)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.RenderService.createRenderSession(RenderService.java:372)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.renderWithBridge(GraphicalEditorPart.java:1640)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.recomputeLayout(GraphicalEditorPart.java:1391)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.onXmlModelChanged(GraphicalEditorPart.java:1353)
+	at com.android.ide.eclipse.adt.internal.editors.layout.LayoutEditorDelegate.delegateXmlModelChanged(LayoutEditorDelegate.java:395)
+	at com.android.ide.eclipse.adt.internal.editors.common.CommonXmlEditor.xmlModelChanged(CommonXmlEditor.java:328)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor$XmlModelStateListener.modelChanged(AndroidXmlEditor.java:1610)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor.wrapEditXmlModel(AndroidXmlEditor.java:1084)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor.wrapUndoEditXmlModel(AndroidXmlEditor.java:1160)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlProperty.setValue(XmlProperty.java:228)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlPropertyEditor.openDialog(XmlPropertyEditor.java:374)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlPropertyEditor.access$0(XmlPropertyEditor.java:295)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlPropertyEditor$1.onClick(XmlPropertyEditor.java:88)
+	at org.eclipse.wb.internal.core.model.property.editor.presentation.ButtonPropertyEditorPresentationImpl$4.handleEvent(ButtonPropertyEditorPresentationImpl.java:127)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1258)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3588)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3209)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-09-15 16:00:12.233
+!MESSAGE activity_main.xml: Couldn't resolve resource @drawable/dark_wood_2x_crop
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-15 16:24:19.212
+!MESSAGE activity_main.xml: 1
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.android.ide.common.resources.ResourceResolver.findResValue(ResourceResolver.java:281)
+	at com.android.ide.common.resources.ResourceResolver.resolveValue(ResourceResolver.java:309)
+	at com.android.layoutlib.bridge.android.BridgeContext.obtainStyledAttributes(BridgeContext.java:676)
+	at android.view.View.<init>(View.java:2746)
+	at android.widget.TextView.<init>(TextView.java:449)
+	at android.widget.Button.<init>(Button.java:108)
+	at android.widget.Button.<init>(Button.java:104)
+	at sun.reflect.GeneratedConstructorAccessor65.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:532)
+	at android.view.LayoutInflater.createView(LayoutInflater.java:586)
+	at android.view.BridgeInflater.onCreateView(BridgeInflater.java:86)
+	at android.view.LayoutInflater.onCreateView(LayoutInflater.java:653)
+	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:678)
+	at android.view.BridgeInflater.createViewFromTag(BridgeInflater.java:131)
+	at android.view.LayoutInflater.rInflate_Original(LayoutInflater.java:739)
+	at android.view.LayoutInflater_Delegate.rInflate(LayoutInflater_Delegate.java:64)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:711)
+	at android.view.LayoutInflater.rInflate_Original(LayoutInflater.java:742)
+	at android.view.LayoutInflater_Delegate.rInflate(LayoutInflater_Delegate.java:64)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:711)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:489)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:372)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.inflate(RenderSessionImpl.java:321)
+	at com.android.layoutlib.bridge.Bridge.createSession(Bridge.java:324)
+	at com.android.ide.common.rendering.LayoutLibrary.createSession(LayoutLibrary.java:325)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.RenderService.createRenderSession(RenderService.java:372)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.renderWithBridge(GraphicalEditorPart.java:1640)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.recomputeLayout(GraphicalEditorPart.java:1391)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.onXmlModelChanged(GraphicalEditorPart.java:1353)
+	at com.android.ide.eclipse.adt.internal.editors.layout.LayoutEditorDelegate.delegateXmlModelChanged(LayoutEditorDelegate.java:395)
+	at com.android.ide.eclipse.adt.internal.editors.common.CommonXmlEditor.xmlModelChanged(CommonXmlEditor.java:328)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor$XmlModelStateListener.modelChanged(AndroidXmlEditor.java:1610)
+	at org.eclipse.wst.sse.core.internal.model.AbstractStructuredModel.fireModelChanged(AbstractStructuredModel.java:526)
+	at org.eclipse.wst.sse.core.internal.model.AbstractStructuredModel.internalModelChanged(AbstractStructuredModel.java:837)
+	at org.eclipse.wst.sse.core.internal.model.AbstractStructuredModel.changedModel(AbstractStructuredModel.java:361)
+	at org.eclipse.wst.xml.core.internal.document.DOMModelImpl.changedModel(DOMModelImpl.java:171)
+	at org.eclipse.wst.sse.core.internal.undo.StructuredTextUndoManager.undo(StructuredTextUndoManager.java:640)
+	at org.eclipse.wst.sse.ui.StructuredTextViewerUndoManager.undo(StructuredTextViewerUndoManager.java:183)
+	at org.eclipse.jface.text.TextViewer.doOperation(TextViewer.java:3958)
+	at org.eclipse.jface.text.source.SourceViewer.doOperation(SourceViewer.java:1016)
+	at org.eclipse.jface.text.source.projection.ProjectionViewer.doOperation(ProjectionViewer.java:1535)
+	at org.eclipse.wst.sse.ui.internal.StructuredTextViewer.doOperation(StructuredTextViewer.java:613)
+	at org.eclipse.ui.texteditor.TextOperationAction$1.run(TextOperationAction.java:128)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.TextOperationAction.run(TextOperationAction.java:126)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.DelegatingAction.runWithEvent(DelegatingAction.java:136)
+	at com.android.ide.eclipse.adt.internal.lint.LintEditAction.runWithEvent(LintEditAction.java:46)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:119)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:476)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.ui.internal.handlers.HandlerService.executeCommand(HandlerService.java:169)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.executeCommand(WorkbenchKeyboard.java:468)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.press(WorkbenchKeyboard.java:786)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.processKeyEvent(WorkbenchKeyboard.java:885)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.filterKeySequenceBindings(WorkbenchKeyboard.java:567)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.access$3(WorkbenchKeyboard.java:508)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard$KeyDownFilter.handleEvent(WorkbenchKeyboard.java:123)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1531)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1257)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1282)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1267)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1294)
+	at org.eclipse.swt.widgets.Widget.gtk_key_press_event(Widget.java:730)
+	at org.eclipse.swt.widgets.Control.gtk_key_press_event(Control.java:3019)
+	at org.eclipse.swt.widgets.Composite.gtk_key_press_event(Composite.java:734)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:1743)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:5016)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4408)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:8422)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1245)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2276)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3207)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-15 16:25:25.484
+!MESSAGE activity_main.xml: Dimension "10" in attribute "paddingTop" is missing unit!
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-15 20:08:59.374
+!MESSAGE activity_main.xml: Dimension "0" in attribute "paddingTop" is missing unit!
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-15 21:18:06.650
+!MESSAGE palette: Failed to find style 'switchStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-15 21:18:06.651
+!MESSAGE palette: Failed to find style 'switchStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-15 21:18:06.651
+!MESSAGE palette: Failed to find style 'switchStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-15 21:18:06.652
+!MESSAGE palette: Failed to find style 'switchStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-15 21:18:06.652
+!MESSAGE palette: Failed to find style 'switchStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-15 21:18:06.653
+!MESSAGE palette: Failed to find style 'switchStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-09-15 21:18:06.653
+!MESSAGE Failed to render set of icons for Switch
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-15 21:18:06.653
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at android.widget.Switch.jumpDrawablesToCurrentState(Switch.java:651)
+	at android.view.ViewGroup.jumpDrawablesToCurrentState(ViewGroup.java:5030)
+	at android.view.ViewGroup.jumpDrawablesToCurrentState(ViewGroup.java:5030)
+	at android.widget.FrameLayout.jumpDrawablesToCurrentState(FrameLayout.java:172)
+	at android.view.View.onAttachedToWindow(View.java:9537)
+	at android.view.View.dispatchAttachedToWindow(View.java:9784)
+	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:2198)
+	at android.view.AttachInfo_Accessor.setAttachInfo(AttachInfo_Accessor.java:37)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.inflate(RenderSessionImpl.java:329)
+	at com.android.layoutlib.bridge.Bridge.createSession(Bridge.java:324)
+	at com.android.ide.common.rendering.LayoutLibrary.createSession(LayoutLibrary.java:325)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.RenderService.createRenderSession(RenderService.java:372)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.PreviewIconFactory.render(PreviewIconFactory.java:271)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.PreviewIconFactory.initColors(PreviewIconFactory.java:581)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.PreviewIconFactory.getBackgroundColor(PreviewIconFactory.java:556)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.PaletteControl.reloadPalette(PaletteControl.java:434)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.reloadPalette(GraphicalEditorPart.java:1404)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart$ConfigListener.onThemeChange(GraphicalEditorPart.java:737)
+	at com.android.ide.eclipse.adt.internal.editors.layout.configuration.ConfigurationComposite.onThemeChange(ConfigurationComposite.java:2907)
+	at com.android.ide.eclipse.adt.internal.editors.layout.configuration.SelectThemeAction.run(SelectThemeAction.java:47)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1258)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1282)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1267)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1061)
+	at org.eclipse.jface.action.ActionContributionItem$9.handleEvent(ActionContributionItem.java:1284)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1258)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3588)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3209)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-15 21:46:36.424
+!MESSAGE activity_main.xml: Dimension "50" in attribute "textSize" is missing unit!
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-15 21:46:53.142
+!MESSAGE activity_main.xml: Dimension "50" in attribute "textSize" is missing unit!
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-15 21:47:31.858
+!MESSAGE activity_main.xml: Dimension "50" in attribute "textSize" is missing unit!
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-15 21:47:42.107
+!MESSAGE activity_main.xml: Dimension "50" in attribute "textSize" is missing unit!
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-15 21:47:53.081
+!MESSAGE activity_main.xml: Dimension "50" in attribute "textSize" is missing unit!
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-15 21:48:03.095
+!MESSAGE activity_main.xml: Dimension "50" in attribute "textSize" is missing unit!
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-15 21:48:16.597
+!MESSAGE activity_main.xml: Dimension "50" in attribute "textSize" is missing unit!
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-15 21:48:26.013
+!MESSAGE activity_main.xml: Dimension "50" in attribute "textSize" is missing unit!
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-15 21:48:33.356
+!MESSAGE activity_main.xml: Dimension "50" in attribute "textSize" is missing unit!
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-15 21:48:42.899
+!MESSAGE activity_main.xml: Dimension "50" in attribute "textSize" is missing unit!
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-15 21:48:50.307
+!MESSAGE activity_main.xml: Dimension "50" in attribute "textSize" is missing unit!
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-15 21:49:11.593
+!MESSAGE activity_main.xml: Dimension "50" in attribute "textSize" is missing unit!
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-15 21:49:22.321
+!MESSAGE activity_main.xml: Dimension "50" in attribute "textSize" is missing unit!
+
+!ENTRY org.eclipse.ui 4 4 2012-09-16 02:06:24.998
+!MESSAGE Referenced part does not exist yet: org.eclipse.ui.views.ProblemView.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 03:35:17.163
+!MESSAGE activity_main.xml: The content attribute is must refer to an existing child.
+!STACK 0
+java.lang.IllegalArgumentException: The content attribute is must refer to an existing child.
+	at android.widget.SlidingDrawer.onFinishInflate(SlidingDrawer.java:246)
+	at android.view.LayoutInflater.rInflate_Original(LayoutInflater.java:747)
+	at android.view.LayoutInflater_Delegate.rInflate(LayoutInflater_Delegate.java:64)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:711)
+	at android.view.LayoutInflater.rInflate_Original(LayoutInflater.java:742)
+	at android.view.LayoutInflater_Delegate.rInflate(LayoutInflater_Delegate.java:64)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:711)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:489)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:372)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.inflate(RenderSessionImpl.java:321)
+	at com.android.layoutlib.bridge.Bridge.createSession(Bridge.java:324)
+	at com.android.ide.common.rendering.LayoutLibrary.createSession(LayoutLibrary.java:325)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.RenderService.createRenderSession(RenderService.java:372)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.renderWithBridge(GraphicalEditorPart.java:1640)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.recomputeLayout(GraphicalEditorPart.java:1391)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.activated(GraphicalEditorPart.java:1165)
+	at com.android.ide.eclipse.adt.internal.editors.layout.LayoutEditorDelegate.delegatePageChange(LayoutEditorDelegate.java:679)
+	at com.android.ide.eclipse.adt.internal.editors.common.CommonXmlEditor.pageChange(CommonXmlEditor.java:359)
+	at org.eclipse.ui.part.MultiPageEditorPart$2.widgetSelected(MultiPageEditorPart.java:290)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:240)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1258)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1282)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1267)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1061)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:2746)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1433)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:257)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1258)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3588)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3209)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 03:36:01.082
+!MESSAGE activity_main.xml: The content attribute is must refer to an existing child.
+!STACK 0
+java.lang.IllegalArgumentException: The content attribute is must refer to an existing child.
+	at android.widget.SlidingDrawer.onFinishInflate(SlidingDrawer.java:246)
+	at android.view.LayoutInflater.rInflate_Original(LayoutInflater.java:747)
+	at android.view.LayoutInflater_Delegate.rInflate(LayoutInflater_Delegate.java:64)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:711)
+	at android.view.LayoutInflater.rInflate_Original(LayoutInflater.java:742)
+	at android.view.LayoutInflater_Delegate.rInflate(LayoutInflater_Delegate.java:64)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:711)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:489)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:372)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.inflate(RenderSessionImpl.java:321)
+	at com.android.layoutlib.bridge.Bridge.createSession(Bridge.java:324)
+	at com.android.ide.common.rendering.LayoutLibrary.createSession(LayoutLibrary.java:325)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.RenderService.createRenderSession(RenderService.java:372)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.renderWithBridge(GraphicalEditorPart.java:1640)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.recomputeLayout(GraphicalEditorPart.java:1391)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.onXmlModelChanged(GraphicalEditorPart.java:1353)
+	at com.android.ide.eclipse.adt.internal.editors.layout.LayoutEditorDelegate.delegateXmlModelChanged(LayoutEditorDelegate.java:395)
+	at com.android.ide.eclipse.adt.internal.editors.common.CommonXmlEditor.xmlModelChanged(CommonXmlEditor.java:328)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor$XmlModelStateListener.modelChanged(AndroidXmlEditor.java:1610)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor.wrapEditXmlModel(AndroidXmlEditor.java:1084)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor.wrapUndoEditXmlModel(AndroidXmlEditor.java:1160)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.OutlineDropListener.performDrop(OutlineDropListener.java:125)
+	at org.eclipse.jface.viewers.ViewerDropAdapter.drop(ViewerDropAdapter.java:276)
+	at org.eclipse.swt.dnd.DNDListener.handleEvent(DNDListener.java:90)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1258)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1282)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1267)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1061)
+	at org.eclipse.swt.dnd.DropTarget.drag_data_received(DropTarget.java:371)
+	at org.eclipse.swt.dnd.DropTarget.Drag_Data_Received(DropTarget.java:251)
+	at org.eclipse.swt.internal.gtk.OS._gtk_drag_get_data(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_drag_get_data(OS.java:6693)
+	at org.eclipse.swt.dnd.DropTarget.drag_drop(DropTarget.java:416)
+	at org.eclipse.swt.dnd.DropTarget.Drag_Drop(DropTarget.java:258)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:8422)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1245)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2276)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3207)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY org.eclipse.ui 4 0 2012-09-16 03:36:01.141
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.w3c.dom.DOMException: Not Found
+	at org.eclipse.wst.xml.core.internal.document.NodeContainer.removeChild(NodeContainer.java:375)
+	at com.android.ide.eclipse.adt.internal.editors.uimodel.UiElementNode.deleteXmlNode(UiElementNode.java:1130)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.ClipboardSupport$1.run(ClipboardSupport.java:240)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor.wrapEditXmlModel(AndroidXmlEditor.java:1025)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor.wrapUndoEditXmlModel(AndroidXmlEditor.java:1160)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.ClipboardSupport.deleteSelection(ClipboardSupport.java:205)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.OutlineDragListener$1.run(OutlineDragListener.java:84)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GlobalCanvasDragInfo.removeSource(GlobalCanvasDragInfo.java:134)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.OutlineDropListener$1.run(OutlineDropListener.java:138)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor.wrapEditXmlModel(AndroidXmlEditor.java:1025)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor.wrapUndoEditXmlModel(AndroidXmlEditor.java:1160)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.OutlineDropListener.performDrop(OutlineDropListener.java:125)
+	at org.eclipse.jface.viewers.ViewerDropAdapter.drop(ViewerDropAdapter.java:276)
+	at org.eclipse.swt.dnd.DNDListener.handleEvent(DNDListener.java:90)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1258)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1282)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1267)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1061)
+	at org.eclipse.swt.dnd.DropTarget.drag_data_received(DropTarget.java:371)
+	at org.eclipse.swt.dnd.DropTarget.Drag_Data_Received(DropTarget.java:251)
+	at org.eclipse.swt.internal.gtk.OS._gtk_drag_get_data(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_drag_get_data(OS.java:6693)
+	at org.eclipse.swt.dnd.DropTarget.drag_drop(DropTarget.java:416)
+	at org.eclipse.swt.dnd.DropTarget.Drag_Drop(DropTarget.java:258)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:8422)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1245)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2276)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3207)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 04:17:02.824
+!MESSAGE activity_main.xml: The content attribute is must refer to an existing child.
+!STACK 0
+java.lang.IllegalArgumentException: The content attribute is must refer to an existing child.
+	at android.widget.SlidingDrawer.onFinishInflate(SlidingDrawer.java:246)
+	at android.view.LayoutInflater.rInflate_Original(LayoutInflater.java:747)
+	at android.view.LayoutInflater_Delegate.rInflate(LayoutInflater_Delegate.java:64)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:711)
+	at android.view.LayoutInflater.rInflate_Original(LayoutInflater.java:742)
+	at android.view.LayoutInflater_Delegate.rInflate(LayoutInflater_Delegate.java:64)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:711)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:489)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:372)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.inflate(RenderSessionImpl.java:321)
+	at com.android.layoutlib.bridge.Bridge.createSession(Bridge.java:324)
+	at com.android.ide.common.rendering.LayoutLibrary.createSession(LayoutLibrary.java:325)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.RenderService.createRenderSession(RenderService.java:372)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.renderWithBridge(GraphicalEditorPart.java:1640)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.recomputeLayout(GraphicalEditorPart.java:1391)
+	at com.android.ide.eclipse.adt.internal.editors.layout.LayoutEditorDelegate.recomputeLayout(LayoutEditorDelegate.java:403)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.SelectionManager.selectSingle(SelectionManager.java:472)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.SelectionManager.select(SelectionManager.java:548)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.select(GraphicalEditorPart.java:632)
+	at com.android.ide.eclipse.adt.internal.editors.layout.LayoutEditorDelegate.delegatePageChange(LayoutEditorDelegate.java:670)
+	at com.android.ide.eclipse.adt.internal.editors.common.CommonXmlEditor.pageChange(CommonXmlEditor.java:359)
+	at org.eclipse.ui.part.MultiPageEditorPart$2.widgetSelected(MultiPageEditorPart.java:290)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:240)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1258)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1282)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1267)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1061)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:2746)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1433)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:257)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1258)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3588)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3209)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-09-16 04:41:41.688
+!MESSAGE activity_main.xml: "15di" in attribute "textSize" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-09-16 05:02:05.759
+!MESSAGE activity_main.xml: "nomra" in attribute "textStyle" is not a valid value
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:02:13.799
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wb.internal.core.model.property.editor.AbstractTextPropertyEditor.toProperty(AbstractTextPropertyEditor.java:320)
+	at org.eclipse.wb.internal.core.model.property.editor.AbstractTextPropertyEditor.handleKeyPressed(AbstractTextPropertyEditor.java:270)
+	at org.eclipse.wb.internal.core.model.property.editor.AbstractTextPropertyEditor.access$300(AbstractTextPropertyEditor.java:43)
+	at org.eclipse.wb.internal.core.model.property.editor.AbstractTextPropertyEditor$1.keyPressed(AbstractTextPropertyEditor.java:192)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:167)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1258)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1282)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1267)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1294)
+	at org.eclipse.swt.widgets.Widget.gtk_key_press_event(Widget.java:730)
+	at org.eclipse.swt.widgets.Control.gtk_key_press_event(Control.java:3019)
+	at org.eclipse.swt.widgets.Text.gtk_key_press_event(Text.java:1497)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:1743)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:5016)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4408)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:8422)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1245)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2276)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3207)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:02:56.136
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wb.internal.core.model.property.editor.AbstractTextPropertyEditor.toProperty(AbstractTextPropertyEditor.java:320)
+	at org.eclipse.wb.internal.core.model.property.editor.AbstractTextPropertyEditor.handleKeyPressed(AbstractTextPropertyEditor.java:270)
+	at org.eclipse.wb.internal.core.model.property.editor.AbstractTextPropertyEditor.access$300(AbstractTextPropertyEditor.java:43)
+	at org.eclipse.wb.internal.core.model.property.editor.AbstractTextPropertyEditor$1.keyPressed(AbstractTextPropertyEditor.java:192)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:167)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1258)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1282)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1267)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1294)
+	at org.eclipse.swt.widgets.Widget.gtk_key_press_event(Widget.java:730)
+	at org.eclipse.swt.widgets.Control.gtk_key_press_event(Control.java:3019)
+	at org.eclipse.swt.widgets.Text.gtk_key_press_event(Text.java:1497)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:1743)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:5016)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4408)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:8422)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1245)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2276)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3207)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:04:44.898
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wb.internal.core.model.property.editor.AbstractTextPropertyEditor.toProperty(AbstractTextPropertyEditor.java:320)
+	at org.eclipse.wb.internal.core.model.property.editor.AbstractTextPropertyEditor.handleKeyPressed(AbstractTextPropertyEditor.java:270)
+	at org.eclipse.wb.internal.core.model.property.editor.AbstractTextPropertyEditor.access$300(AbstractTextPropertyEditor.java:43)
+	at org.eclipse.wb.internal.core.model.property.editor.AbstractTextPropertyEditor$1.keyPressed(AbstractTextPropertyEditor.java:192)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:167)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1258)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1282)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1267)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1294)
+	at org.eclipse.swt.widgets.Widget.gtk_key_press_event(Widget.java:730)
+	at org.eclipse.swt.widgets.Control.gtk_key_press_event(Control.java:3019)
+	at org.eclipse.swt.widgets.Text.gtk_key_press_event(Text.java:1497)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:1743)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:5016)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4408)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:8422)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1245)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2276)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3207)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:07:48.746
+!MESSAGE activity_main.xml: Color value 'FFD000' must start with #
+!STACK 0
+java.lang.NumberFormatException: Color value 'FFD000' must start with #
+	at com.android.layoutlib.bridge.impl.ResourceHelper.getColor(ResourceHelper.java:71)
+	at android.content.res.BridgeTypedArray.getColorStateList(BridgeTypedArray.java:384)
+	at android.widget.TextView.<init>(TextView.java:774)
+	at android.widget.TextView.<init>(TextView.java:442)
+	at sun.reflect.GeneratedConstructorAccessor59.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:532)
+	at android.view.LayoutInflater.createView(LayoutInflater.java:586)
+	at android.view.BridgeInflater.onCreateView(BridgeInflater.java:86)
+	at android.view.LayoutInflater.onCreateView(LayoutInflater.java:653)
+	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:678)
+	at android.view.BridgeInflater.createViewFromTag(BridgeInflater.java:131)
+	at android.view.LayoutInflater.rInflate_Original(LayoutInflater.java:739)
+	at android.view.LayoutInflater_Delegate.rInflate(LayoutInflater_Delegate.java:64)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:711)
+	at android.view.LayoutInflater.rInflate_Original(LayoutInflater.java:742)
+	at android.view.LayoutInflater_Delegate.rInflate(LayoutInflater_Delegate.java:64)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:711)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:489)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:372)
+	at com.android.layoutlib.bridge.impl.RenderSessionImpl.inflate(RenderSessionImpl.java:321)
+	at com.android.layoutlib.bridge.Bridge.createSession(Bridge.java:324)
+	at com.android.ide.common.rendering.LayoutLibrary.createSession(LayoutLibrary.java:325)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.RenderService.createRenderSession(RenderService.java:372)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.renderWithBridge(GraphicalEditorPart.java:1640)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.recomputeLayout(GraphicalEditorPart.java:1391)
+	at com.android.ide.eclipse.adt.internal.editors.layout.gle2.GraphicalEditorPart.onXmlModelChanged(GraphicalEditorPart.java:1353)
+	at com.android.ide.eclipse.adt.internal.editors.layout.LayoutEditorDelegate.delegateXmlModelChanged(LayoutEditorDelegate.java:395)
+	at com.android.ide.eclipse.adt.internal.editors.common.CommonXmlEditor.xmlModelChanged(CommonXmlEditor.java:328)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor$XmlModelStateListener.modelChanged(AndroidXmlEditor.java:1610)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor.wrapEditXmlModel(AndroidXmlEditor.java:1084)
+	at com.android.ide.eclipse.adt.internal.editors.AndroidXmlEditor.wrapUndoEditXmlModel(AndroidXmlEditor.java:1160)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlProperty.setValue(XmlProperty.java:228)
+	at com.android.ide.eclipse.adt.internal.editors.layout.properties.XmlPropertyEditor.setEditorText(XmlPropertyEditor.java:291)
+	at org.eclipse.wb.internal.core.model.property.editor.AbstractTextPropertyEditor.toProperty(AbstractTextPropertyEditor.java:325)
+	at org.eclipse.wb.internal.core.model.property.editor.AbstractTextPropertyEditor.deactivate(AbstractTextPropertyEditor.java:222)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.deactivateEditor(PropertyTable.java:574)
+	at org.eclipse.wb.internal.core.model.property.editor.AbstractTextPropertyEditor$2.handleEvent(AbstractTextPropertyEditor.java:203)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1258)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1282)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1263)
+	at org.eclipse.swt.widgets.Control.sendFocusEvent(Control.java:3575)
+	at org.eclipse.swt.widgets.Control.gtk_event_after(Control.java:2938)
+	at org.eclipse.swt.widgets.Text.gtk_event_after(Text.java:1353)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:1738)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:5016)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4408)
+	at org.eclipse.swt.internal.gtk.OS._gtk_widget_grab_focus(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_widget_grab_focus(OS.java:12956)
+	at org.eclipse.swt.widgets.Control.forceFocus(Control.java:2320)
+	at org.eclipse.swt.widgets.Composite.forceFocus(Composite.java:526)
+	at org.eclipse.swt.widgets.Control.forceFocus(Control.java:2313)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable$5.mouseDown(PropertyTable.java:197)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:191)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1258)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3588)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3209)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:11:32.387
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:11:50.253
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:12:11.155
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:13:40.538
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:16:41.981
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:16:41.983
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:16:53.317
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:16:53.319
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:16:54.276
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:16:54.278
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:16:57.642
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:16:57.644
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:16:58.787
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:16:58.792
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:17:00.354
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:17:00.356
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:17:04.181
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:17:04.184
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:17:10.942
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:17:10.944
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:17:13.425
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:17:13.427
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:17:19.697
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:17:19.700
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:17:28.461
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:17:28.464
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:17:38.351
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:17:38.355
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-09-16 05:18:18.976
+!MESSAGE activity_main.xml: "170\dip" in attribute "paddingBottom" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:18:18.983
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:18:18.991
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:18:29.648
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:18:29.651
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:19:05.104
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:19:05.106
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:19:18.685
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:19:18.687
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:19:25.189
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:19:25.191
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:19:30.194
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:19:30.196
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:19:42.369
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:19:42.376
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:19:55.380
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:19:55.384
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:20:02.681
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:20:02.702
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:20:18.378
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:20:18.380
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:20:25.579
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:20:25.581
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:20:26.952
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:20:26.954
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:20:59.976
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:20:59.981
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:21:07.918
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:21:07.921
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:21:14.086
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:21:14.090
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:21:22.919
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:21:22.924
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:21:24.408
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:21:25.297
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:21:51.750
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:21:51.753
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:22:00.610
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:22:00.614
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:22:11.152
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:22:11.156
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:22:15.680
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:22:15.682
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:22:16.946
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:22:16.962
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:22:42.638
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:22:42.641
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:22:52.567
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:22:52.570
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:22:59.231
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:22:59.235
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:23:51.502
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:23:51.504
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:24:13.029
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:24:13.031
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:24:29.690
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:24:29.692
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:24:42.856
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:24:42.859
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:25:42.133
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:25:42.136
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:25:50.730
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:25:50.733
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:25:56.765
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:25:56.767
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:26:06.990
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:26:06.992
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:26:13.283
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:26:13.285
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:26:19.598
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:26:19.600
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:26:20.894
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:26:20.900
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:38:52.804
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:38:52.807
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:39:04.232
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:39:04.235
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:39:15.491
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:39:15.494
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:39:17.878
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:39:17.881
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:39:18.999
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:39:19.002
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:39:21.982
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:39:21.984
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:39:22.735
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:39:22.739
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:39:24.253
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:39:24.255
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:39:25.733
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:39:25.735
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:39:40.166
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wb.internal.core.model.property.editor.AbstractTextPropertyEditor.toProperty(AbstractTextPropertyEditor.java:320)
+	at org.eclipse.wb.internal.core.model.property.editor.AbstractTextPropertyEditor.handleKeyPressed(AbstractTextPropertyEditor.java:270)
+	at org.eclipse.wb.internal.core.model.property.editor.AbstractTextPropertyEditor.access$300(AbstractTextPropertyEditor.java:43)
+	at org.eclipse.wb.internal.core.model.property.editor.AbstractTextPropertyEditor$1.keyPressed(AbstractTextPropertyEditor.java:192)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:167)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1258)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1282)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1267)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1294)
+	at org.eclipse.swt.widgets.Widget.gtk_key_press_event(Widget.java:730)
+	at org.eclipse.swt.widgets.Control.gtk_key_press_event(Control.java:3019)
+	at org.eclipse.swt.widgets.Text.gtk_key_press_event(Text.java:1497)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:1743)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:5016)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4408)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:8422)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1245)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2276)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3207)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:39:58.438
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:39:58.442
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:40:16.034
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:40:16.037
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:40:22.774
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:40:22.776
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:40:32.137
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:40:32.141
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:40:57.222
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:40:57.224
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:41:02.193
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:41:02.195
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:41:09.362
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:41:09.364
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:41:29.361
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:41:29.371
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:42:33.190
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:42:33.193
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:42:41.969
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wb.internal.core.model.property.editor.AbstractTextPropertyEditor.toProperty(AbstractTextPropertyEditor.java:320)
+	at org.eclipse.wb.internal.core.model.property.editor.AbstractTextPropertyEditor.handleKeyPressed(AbstractTextPropertyEditor.java:270)
+	at org.eclipse.wb.internal.core.model.property.editor.AbstractTextPropertyEditor.access$300(AbstractTextPropertyEditor.java:43)
+	at org.eclipse.wb.internal.core.model.property.editor.AbstractTextPropertyEditor$1.keyPressed(AbstractTextPropertyEditor.java:192)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:167)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1258)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1282)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1267)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1294)
+	at org.eclipse.swt.widgets.Widget.gtk_key_press_event(Widget.java:730)
+	at org.eclipse.swt.widgets.Control.gtk_key_press_event(Control.java:3019)
+	at org.eclipse.swt.widgets.Text.gtk_key_press_event(Text.java:1497)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:1743)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:5016)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4408)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:8422)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1245)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:2276)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3207)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-09-16 05:43:00.474
+!MESSAGE activity_main.xml: "322ip" in attribute "paddingRight" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:43:00.483
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:43:00.485
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:43:09.322
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:43:09.324
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:43:18.893
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:43:18.895
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:43:20.087
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:43:20.092
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:43:22.001
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:43:22.015
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:45:02.657
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 05:45:02.660
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+!SESSION 2012-09-16 06:25:58.784 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2012-09-16 06:26:05.052
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 4 4 2012-09-16 06:27:26.456
+!MESSAGE Invalid preference page path: XML Syntax
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 06:37:18.957
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 06:37:18.967
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 06:37:49.168
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 06:37:49.173
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 06:38:01.042
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 06:38:01.047
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 06:38:02.189
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 06:38:02.193
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY org.eclipse.ui 4 4 2012-09-16 06:55:20.790
+!MESSAGE Referenced part does not exist yet: org.eclipse.ui.views.ProblemView.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 07:23:43.930
+!MESSAGE Parser exception for /home/ericberdinis/JacksonPass/Android/Passwarp/AndroidManifest.xml: The element type "uses-permission" must be terminated by the matching end-tag "</uses-permission>".
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 26; columnNumber: 3; The element type "uses-permission" must be terminated by the matching end-tag "</uses-permission>".
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1234)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:525)
+	at javax.xml.parsers.SAXParser.parse(SAXParser.java:392)
+	at com.android.sdklib.xml.AndroidManifestParser.parse(AndroidManifestParser.java:607)
+	at com.android.ide.eclipse.adt.internal.project.AndroidManifestHelper.parseUnchecked(AndroidManifestHelper.java:75)
+	at com.android.ide.eclipse.adt.internal.project.AndroidManifestHelper.parse(AndroidManifestHelper.java:102)
+	at com.android.ide.eclipse.adt.internal.build.builders.PreCompilerDeltaVisitor.visit(PreCompilerDeltaVisitor.java:222)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at com.android.ide.eclipse.adt.internal.build.builders.PreCompilerBuilder.build(PreCompilerBuilder.java:311)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 07:24:26.600
+!MESSAGE Parser exception for /home/ericberdinis/JacksonPass/Android/Passwarp/AndroidManifest.xml: Element type "application" must be followed by either attribute specifications, ">" or "/>".
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 12; columnNumber: 9; Element type "application" must be followed by either attribute specifications, ">" or "/>".
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1234)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:525)
+	at javax.xml.parsers.SAXParser.parse(SAXParser.java:392)
+	at com.android.sdklib.xml.AndroidManifestParser.parse(AndroidManifestParser.java:607)
+	at com.android.ide.eclipse.adt.internal.project.AndroidManifestHelper.parseUnchecked(AndroidManifestHelper.java:75)
+	at com.android.ide.eclipse.adt.internal.project.AndroidManifestHelper.parse(AndroidManifestHelper.java:102)
+	at com.android.ide.eclipse.adt.internal.build.builders.PreCompilerDeltaVisitor.visit(PreCompilerDeltaVisitor.java:222)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at com.android.ide.eclipse.adt.internal.build.builders.PreCompilerBuilder.build(PreCompilerBuilder.java:311)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:20:23.384
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:20:23.396
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:20:55.744
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:20:55.746
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:20:58.232
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:20:58.234
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:20:59.334
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:20:59.337
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:21:03.982
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:21:03.988
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:21:06.338
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:21:06.340
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:21:11.852
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:21:11.855
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:21:15.282
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:21:15.284
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:21:17.214
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:21:17.216
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:21:18.993
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:21:18.995
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:21:24.948
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:21:24.954
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:21:40.218
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:21:40.221
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:21:44.072
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:21:44.075
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:21:55.659
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:21:55.662
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:21:58.884
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:21:58.886
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:22:01.752
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:22:01.755
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:22:05.640
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:22:05.642
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:22:18.075
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:22:18.077
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:22:39.981
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:22:39.983
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:22:42.645
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:22:42.647
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:23:05.846
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:23:05.849
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:23:32.641
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:23:32.643
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:23:37.595
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:23:37.599
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:23:42.545
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:23:42.547
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:23:57.381
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:23:57.386
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:24:07.235
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:24:07.237
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:24:25.125
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:24:25.127
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:24:42.427
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:24:42.430
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:25:06.142
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:25:06.145
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:25:30.150
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:25:30.168
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:25:41.536
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:25:41.538
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:26:00.793
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:26:00.796
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:26:08.812
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:26:08.814
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:26:22.680
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:26:22.683
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:26:31.478
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:26:31.481
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:26:39.409
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:26:39.411
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:26:49.269
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:26:49.271
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:26:54.173
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:26:54.175
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:26:59.760
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:26:59.762
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:27:05.480
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:27:05.482
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:27:15.351
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:27:15.353
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:27:20.312
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:27:20.317
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:27:32.132
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:27:32.141
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:27:45.624
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:27:45.626
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:27:47.496
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:27:47.499
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:28:55.074
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-16 08:28:55.077
+!MESSAGE activity_main.xml: Paint.setShadowLayer is not supported.
