@@ -1,0 +1,182 @@
+/* Block Styling */
+.CategoryBlock .block_left {
+	width: 12px;
+	height: 30px;
+	
+	float: left;
+}
+
+.CategoryBlock .block_middle {
+	height: 30px;
+	
+	float: left;
+}
+
+.CategoryBlock .block_right {
+	width: 12px;
+	height: 30px;
+	
+	float: left;
+}
+
+.CategoryBlock .block_middle div {
+	margin-top: 5px;
+	padding: 0 10px;
+	height: 19px;
+	
+	border-radius: 2px;
+}
+
+
+/* Colors - Left*/
+.block_left.gray {
+	background: url("../assets/gray/block_left.png");
+}
+
+.block_left.red {
+	background: url("../assets/red/block_left.png");
+}
+
+.block_left.blue {
+	background: url("../assets/blue/block_left.png");
+}
+
+.block_left.green {
+	background: url("../assets/green/block_left.png");
+}
+
+.block_left.orange {
+	background: url("../assets/orange/block_left.png");
+}
+
+/* Colors - Middle*/
+.block_middle.gray {
+	background: url("../assets/gray/block_middle.png") repeat-x;
+}
+
+.block_middle.red {
+	background: url("../assets/red/block_middle.png") repeat-x;
+}
+
+.block_middle.blue {
+	background: url("../assets/blue/block_middle.png") repeat-x;
+}
+
+.block_middle.green {
+	background: url("../assets/green/block_middle.png") repeat-x;
+}
+
+.block_middle.orange {
+	background: url("../assets/orange/block_middle.png") repeat-x;
+}
+
+/* Colors - Right*/
+.block_right.gray {
+	background: url("../assets/gray/block_right.png");
+}
+
+.block_right.red {
+	background: url("../assets/red/block_right.png");
+}
+
+.block_right.blue {
+	background: url("../assets/blue/block_right.png");
+}
+
+.block_right.green {
+	background: url("../assets/green/block_right.png");
+}
+
+.block_right.orange {
+	background: url("../assets/orange/block_right.png");
+}
+
+/* Interlock - Gray */
+
+#PasswordCanvas .CategoryBlock .block_right.gray {
+	background-image: url("../assets/gray/block_right_locked.png");
+}
+
+#PasswordCanvas .CategoryBlock .block_left.gray {
+	background-image: url("../assets/gray/block_left_locked.png");
+}
+
+#PasswordCanvas .CategoryBlock:last-child .block_right.gray {
+	background-image: url("../assets/gray/block_right.png");
+}
+
+#PasswordCanvas .CategoryBlock:first-child .block_left.gray {
+	background-image: url("../assets/gray/block_left.png");
+}
+
+/* Interlock - Red */
+
+#PasswordCanvas .CategoryBlock .block_right.red {
+	background-image: url("../assets/red/block_right_locked.png");
+}
+
+#PasswordCanvas .CategoryBlock .block_left.red {
+	background-image: url("../assets/red/block_left_locked.png");
+}
+
+#PasswordCanvas .CategoryBlock:last-child .block_right.red {
+	background-image: url("../assets/red/block_right.png");
+}
+
+#PasswordCanvas .CategoryBlock:first-child .block_left.red {
+	background-image: url("../assets/red/block_left.png");
+}
+
+/* Interlock - Blue */
+
+#PasswordCanvas .CategoryBlock .block_right.blue {
+	background-image: url("../assets/blue/block_right_locked.png");
+}
+
+#PasswordCanvas .CategoryBlock .block_left.blue {
+	background-image: url("../assets/blue/block_left_locked.png");
+}
+
+#PasswordCanvas .CategoryBlock:last-child .block_right.blue {
+	background-image: url("../assets/blue/block_right.png");
+}
+
+#PasswordCanvas .CategoryBlock:first-child .block_left.blue {
+	background-image: url("../assets/blue/block_left.png");
+}
+
+/* Interlock - Green */
+
+#PasswordCanvas .CategoryBlock .block_right.green {
+	background-image: url("../assets/green/block_right_locked.png");
+}
+
+#PasswordCanvas .CategoryBlock .block_left.green {
+	background-image: url("../assets/green/block_left_locked.png");
+}
+
+#PasswordCanvas .CategoryBlock:last-child .block_right.green {
+	background-image: url("../assets/green/block_right.png");
+}
+
+#PasswordCanvas .CategoryBlock:first-child .block_left.green {
+	background-image: url("../assets/green/block_left.png");
+}
+
+/* Interlock - Orange */
+
+#PasswordCanvas .CategoryBlock .block_right.orange {
+	background-image: url("../assets/orange/block_right_locked.png");
+}
+
+#PasswordCanvas .CategoryBlock .block_left.orange {
+	background-image: url("../assets/orange/block_left_locked.png");
+}
+
+#PasswordCanvas .CategoryBlock:last-child .block_right.orange {
+	background-image: url("../assets/orange/block_right.png");
+}
+
+#PasswordCanvas .CategoryBlock:first-child .block_left.orange {
+	background-image: url("../assets/orange/block_left.png");
+}
