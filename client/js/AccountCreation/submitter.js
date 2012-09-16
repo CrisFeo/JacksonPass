@@ -9,7 +9,6 @@ var Submission = {
 		$.ajax({
 			type: "POST",
 			url: "Create",
-			processData: false,
 			data: Submission.getAccountInfo(),
 			headers: Submission.getInfoHeaders(),
 			success: Submission.success,
@@ -65,7 +64,7 @@ var Submission = {
 		
 		Controller.PasswordCanvas.children().each(function() {
 			var block = $(this);
-			var value = (block.hasClass('TextBlock')) ? block.find('p.value').text(): block.data('model').pattern;
+			var value = (block.hasClass('TextBlock')) ? "{"+block.find('p.value').text()+"}": block.data('model').pattern;
 			pattern += value;
 		});
 		
